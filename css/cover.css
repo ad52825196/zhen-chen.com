@@ -1,0 +1,42 @@
+body {
+    background-color: #4d4dff;
+}
+
+/* links */
+a,
+a:focus,
+a:hover {
+    color: #ffffff;
+}
+
+/* vertical middle */
+.wrapper {
+    width: 700px;
+    height: 260px;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+    left: 50%;
+    margin-left: -350px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    /* for desktop */
+    h1 {
+        font-size: 60px;
+    }
+
+    .lead {
+        font-size: 28px;
+    }
+
+    .wrapper {
+        width: 1000px;
+        height: 300px;
+        margin-top: -150px;
+        margin-left: -500px;
+    }
+}

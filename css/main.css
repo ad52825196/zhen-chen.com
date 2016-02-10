@@ -1,0 +1,68 @@
+/* to top button */
+#to-top
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #3399ff;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+
+#to-top:hover
+{
+    opacity: 1;
+}
+
+#to-top span {
+    color: #ffffff;
+    width: 40px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+#to-top.affix {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+
+#to-top.affix-bottom {
+    position: absolute;
+    right: 40px;
+}
+
+/* fixed nav bar */
+body {
+    padding-top: 80px;
+}
+
+/* announcement */
+.alert {
+    border-radius: 0px;
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #e5e5e5;
+    background-color: #f2f2f2;
+    padding: 20px 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+footer p {
+    display: inline;
+}
+
+footer ul {
+    float: right;
+}
+
+footer li {
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+}
