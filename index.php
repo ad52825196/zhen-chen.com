@@ -2,10 +2,14 @@
 
 require_once 'functions.php';
 
+$keywords = '飞越彩虹, 新西兰, 奥克兰, 奥克兰大学, 上海交通大学, New Zealand, Auckland, University of Auckland, Shanghai Jiao Tong University, Computer Science, Information System, Zhen Chen';
+$title = 'Zhen Chen | 飞越彩虹';
+$canonical = 'https://zhen-chen.com/';
+$page_identifier = '';
 $head = '<link rel="stylesheet" href="/css/cover.css" />';
+$active = 'home';
 
-// $search = ['%keywords%', '%title%', '%canonical%', '%page_identifier%', '%active%'];
-$replace = ['飞越彩虹, 新西兰, 奥克兰, 奥克兰大学, 上海交通大学, New Zealand, Auckland, University of Auckland, Shanghai Jiao Tong University, Computer Science, Information System, Zhen Chen', 'Zhen Chen | 飞越彩虹', 'https://zhen-chen.com/', 'zhen-chen.com', 'home', $head];
+$replace = [$keywords, $title, $canonical, $page_identifier, $head, $active];
 
 fillFile($replace, 'header.html');
 
