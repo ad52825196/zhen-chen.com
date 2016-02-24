@@ -3,9 +3,9 @@ body {
 }
 
 /* links */
-a,
-a:focus,
-a:hover {
+.wrapper a,
+.wrapper a:focus,
+.wrapper a:hover {
     color: #ffffff;
 }
 
@@ -17,7 +17,7 @@ a:hover {
 .wrapper {
     width: 400px;
     height: 320px;
-    padding: 0 20px;
+    padding: 0px 20px;
     position: absolute;
     top: 50%;
     margin-top: -160px;
@@ -25,6 +25,7 @@ a:hover {
     margin-left: -200px;
     color: #ffffff;
     text-align: center;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 400px) {
