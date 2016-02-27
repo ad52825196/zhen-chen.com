@@ -8,7 +8,7 @@ $canonical = 'https://zhen-chen.com/';
 $page_identifier = '';
 $active = 'home';
 $head = '<link rel="stylesheet" href="/css/cover.css" />';
-$foot = '<script src="/js/cover.js"></script>';
+$foot = '';
 
 $replace = [$keywords, $title, $canonical, $page_identifier, $active, $head, $foot];
 

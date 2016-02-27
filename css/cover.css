@@ -10,19 +10,19 @@ body {
 }
 
 .lead {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* vertical middle */
 .wrapper {
-    width: 400px;
-    height: 320px;
     padding: 0px 20px;
     position: absolute;
     top: 50%;
-    margin-top: -160px;
     left: 50%;
+    width: 400px;
     margin-left: -200px;
+    height: 312px;
+    margin-top: -156px;
     color: #ffffff;
     text-align: center;
 }
@@ -39,9 +39,9 @@ body {
 
     .wrapper {
         width: 280px;
-        height: 240px;
-        margin-top: -100px;
         margin-left: -140px;
+        height: 264px;
+        margin-top: -132px;
     }
 }
 
@@ -58,6 +58,8 @@ body {
     .wrapper {
         width: 700px;
         margin-left: -350px;
+        height: 340px;
+        margin-top: -170px;
     }
 }
 
@@ -73,8 +75,8 @@ body {
 
     .wrapper {
         width: 1000px;
-        height: 300px;
-        margin-top: -150px;
         margin-left: -500px;
+        height: 372px;
+        margin-top: -186px;
     }
 }
