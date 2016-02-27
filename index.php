@@ -23,14 +23,8 @@ fillFile($replace, 'header.html');
     <p class="lead">Feel free to <a href="about">contact me</a>, <a href="guestbook">leave your words</a>, or have a look at <a href="//blog.zhen-chen.com/">my blog</a>.</p>
 </div>
 
-</div>
-<!-- End Container -->
+<?php
 
-<script src="/js/jquery-1.11.3.min.js"></script>
-<script src="/js/jquery.lazyload.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
+fillFile($replace, 'footer.html');
 
-<script>$('#home').addClass('active');</script>
-</body>
-</html>
+?>

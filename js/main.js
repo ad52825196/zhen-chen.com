@@ -26,3 +26,6 @@ $("img.lazy").lazyload({
 $(document.links).filter(function() {
     return this.hostname != window.location.hostname;
 }).attr('target', '_blank');
+
+// leave space for footer
+$('body')[0].style.paddingBottom = $('footer').outerHeight(true) + "px";
