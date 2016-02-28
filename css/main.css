@@ -42,8 +42,7 @@ body {
 .alert {
     border-radius: 0px;
     padding: 10px;
-    position: absolute;
-    width: 100%;
+    position: relative;
     z-index: 100;
 }
 
