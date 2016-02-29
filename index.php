@@ -12,7 +12,7 @@ $foot = '';
 
 $replace = [$keywords, $title, $canonical, $page_identifier, $active, $head, $foot];
 
-fillFile($replace, 'header.html');
+echo fillFile($replace, 'header.html');
 
 ?>
 
@@ -26,6 +26,6 @@ fillFile($replace, 'header.html');
 
 <?php
 
-fillFile($replace, 'footer.html');
+echo fillFile($replace, 'footer.html');
 
 ?>
