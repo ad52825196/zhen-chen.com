@@ -9,8 +9,9 @@ $page_identifier = '';
 $active = 'home';
 $head = '<link rel="stylesheet" href="/css/cover.css" />';
 $foot = '';
+$alert = '';
 
-$replace = [$keywords, $title, $canonical, $page_identifier, $active, $head, $foot];
+$replace = [$keywords, $title, $canonical, $page_identifier, $active, $head, $foot, $alert];
 
 echo fillFile($replace, 'header.html');
 
