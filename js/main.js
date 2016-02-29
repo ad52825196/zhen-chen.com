@@ -18,7 +18,7 @@ $('#to-top').affix({
 });
 
 // lazy load for images
-$("img.lazy").lazyload({
+$('img.lazy').lazyload({
     threshold: 200
 });
 
@@ -28,4 +28,4 @@ $(document.links).filter(function() {
 }).attr('target', '_blank');
 
 // leave space for footer
-$('body')[0].style.paddingBottom = $('footer').outerHeight(true) + "px";
+$('body')[0].style.paddingBottom = $('footer').outerHeight(true) + 'px';
