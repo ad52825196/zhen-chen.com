@@ -46,6 +46,13 @@ body {
     z-index: 100;
 }
 
+@media only screen and (max-width: 400px) {
+    /* for small screen */
+    .alert {
+        font-size: 12px;
+    }
+}
+
 /* sticky footer */
 html {
     position: relative;
