@@ -38,6 +38,11 @@ body {
     padding-top: 80px;
 }
 
+/* display dropdown menu when mouse hover */
+.navbar-nav > li:hover .dropdown-menu {
+    display: block;
+}
+
 /* announcement */
 .alert {
     border-radius: 0px;
