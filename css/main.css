@@ -61,6 +61,15 @@ body {
     }
 }
 
+/* icons */
+.fa {
+    color: #4d4d4d;
+}
+
+.fa:hover {
+    color: #000000;
+}
+
 /* sticky footer */
 html {
     position: relative;
@@ -94,20 +103,10 @@ footer ul {
     margin-left: 10px;
 }
 
-.social-icon {
-    width: 16px;
-    height: 16px;
-}
-
 @media only screen and (max-width: 800px) {
     /* for tablet and small screen */
     footer {
         padding: 10px 20px;
         font-size: 12px;
-    }
-
-    .social-icon {
-        height: 12px;
-        width: 12px;
     }
 }
