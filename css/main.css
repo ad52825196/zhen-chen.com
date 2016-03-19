@@ -7,6 +7,31 @@ a:focus {
     text-decoration: none;
 }
 
+/* link colour transition */
+a,
+a:focus {
+    color: #1986e6;
+}
+
+a:hover,
+a:active {
+    color: #333333;
+}
+
+a,
+.social-icon .fa,
+#to-top {
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.navbar a {
+    -webkit-transition-duration: 0;
+    transition-duration: 0;
+}
+
 /* to top button */
 #to-top {
     width: 40px;
@@ -14,8 +39,6 @@ a:focus {
     cursor: pointer;
     opacity: 0.8;
     background-color: #3399ff;
-    transition-duration: 300ms;
-    transition-timing-function: linear;
 }
 
 #to-top:hover {

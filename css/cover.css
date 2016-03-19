@@ -8,9 +8,13 @@ body {
 
 /* links */
 .wrapper a,
-.wrapper a:focus,
-.wrapper a:hover {
+.wrapper a:focus {
     color: #ffffff;
+}
+
+.wrapper a:hover,
+.wrapper a:active {
+    color: #ffbb33;
 }
 
 @media only screen and (max-width: 800px) {
