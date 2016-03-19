@@ -15,6 +15,7 @@ body {
 .wrapper a:hover,
 .wrapper a:active {
     color: #ffbb33;
+    text-shadow: none;
 }
 
 @media only screen and (max-width: 800px) {

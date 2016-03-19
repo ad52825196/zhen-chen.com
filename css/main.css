@@ -32,6 +32,17 @@ a,
     transition-duration: 0;
 }
 
+/* link shadow */
+a:hover,
+a:active {
+    text-shadow: 1px 1px #efefef, 2px 2px #cccccc;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    text-shadow: none;
+}
+
 /* to top button */
 #to-top {
     width: 40px;
@@ -63,9 +74,13 @@ a,
     right: 40px;
 }
 
-/* fixed nav bar */
+/* fixed navbar */
 body {
     padding-top: 80px;
+}
+
+.dropdown-menu > li > a:focus {
+    background-color: transparent;
 }
 
 /* display dropdown menu when hovering */
