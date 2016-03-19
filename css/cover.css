@@ -20,6 +20,8 @@ body {
 @media only screen and (max-width: 800px) {
     /* for small screen */
     .wrapper a,
+    .wrapper a:hover,
+    .wrapper a:active,
     .wrapper a:focus {
         text-decoration: underline;
     }
