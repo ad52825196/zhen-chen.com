@@ -93,9 +93,12 @@ body {
 
 /* announcement */
 .alert {
+    border-style: none;
     border-radius: 0px;
+    margin-bottom: 0px;
     padding: 10px;
     position: relative;
+    top: -30px;
     z-index: 100;
 }
 
