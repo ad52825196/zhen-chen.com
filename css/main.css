@@ -1,6 +1,14 @@
+/* no outline or underline on links*/
+a,
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
 /* to top button */
-#to-top
-{
+#to-top {
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -10,8 +18,7 @@
     transition-timing-function: linear;
 }
 
-#to-top:hover
-{
+#to-top:hover {
     opacity: 1;
 }
 
