@@ -1,0 +1,97 @@
+body {
+    background-color: #6666ff;
+}
+
+.lead {
+    font-size: 16px;
+}
+
+/* links */
+.wrapper a,
+.wrapper a:focus {
+    color: #ffffff;
+}
+
+.wrapper a:hover,
+.wrapper a:active {
+    color: #ffbb33;
+    text-shadow: none;
+}
+
+@media only screen and (max-width: 800px) {
+    /* for small screen */
+    .wrapper a,
+    .wrapper a:hover,
+    .wrapper a:active,
+    .wrapper a:focus {
+        text-decoration: underline;
+    }
+}
+
+/* center in the page */
+.wrapper {
+    padding: 0px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    height: 312px;
+    margin-top: -156px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    /* for small screen */
+    h1 {
+        font-size: 24px;
+    }
+
+    .lead {
+        font-size: 12px;
+    }
+
+    .wrapper {
+        width: 280px;
+        margin-left: -140px;
+        height: 264px;
+        margin-top: -132px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    /* for tablet */
+    h1 {
+        font-size: 48px;
+    }
+
+    .lead {
+        font-size: 22px;
+    }
+
+    .wrapper {
+        width: 700px;
+        margin-left: -350px;
+        height: 340px;
+        margin-top: -170px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* for desktop */
+    h1 {
+        font-size: 60px;
+    }
+
+    .lead {
+        font-size: 28px;
+    }
+
+    .wrapper {
+        width: 1000px;
+        margin-left: -500px;
+        height: 372px;
+        margin-top: -186px;
+    }
+}
