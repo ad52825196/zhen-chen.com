@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="author" content="Zhen Chen" />
-    <meta name="keywords" content="{{ $meta['keywords'] or '' }}" />
+    <meta name="keywords" content="@yield('keywords'){{ $meta['keywords'] or '' }}" />
 
-    <title>{{ $meta['title'] or 'Zhen Chen | 飞越彩虹' }}</title>
+    <title>@yield('title'){{ $meta['title'] or '' }}</title>
 
-    <link rel="canonical" href="{{ $meta['canonical'] or '' }}" />
+    <link rel="canonical" href="@yield('canonical'){{ $meta['canonical'] or '' }}" />
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -51,45 +51,45 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li id="home"><a href="/">Home</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#" title="Coming Soon">Blog</a></li>
                 <li class="dropdown" id="portfolio">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Programming</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">Translation</a></li>
+                        <li><a href="#" title="Coming Soon">Programming</a></li>
+                        <li><a href="#" title="Coming Soon">Videos</a></li>
+                        <li><a href="#" title="Coming Soon">Translation</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="gallery">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Animations</a></li>
-                        <li><a href="#">Books</a></li>
-                        <li><a href="#">Cards</a></li>
-                        <li><a href="#">Footprints</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Softwares</a></li>
-                        <li><a href="#">TV Shows</a></li>
-                        <li><a href="#">Websites</a></li>
+                        <li><a href="#" title="Coming Soon">Animations</a></li>
+                        <li><a href="#" title="Coming Soon">Books</a></li>
+                        <li><a href="#" title="Coming Soon">Cards</a></li>
+                        <li><a href="#" title="Coming Soon">Footprints</a></li>
+                        <li><a href="#" title="Coming Soon">Games</a></li>
+                        <li><a href="#" title="Coming Soon">Movies</a></li>
+                        <li><a href="#" title="Coming Soon">People</a></li>
+                        <li><a href="#" title="Coming Soon">Softwares</a></li>
+                        <li><a href="#" title="Coming Soon">TV Shows</a></li>
+                        <li><a href="#" title="Coming Soon">Websites</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">陈绮贞</a></li>
-                        <li><a href="#">少司命</a></li>
-                        <li><a href="#">赵玉平</a></li>
-                        <li><a href="#">剑网3</a></li>
+                        <li><a href="#" title="Coming Soon">陈绮贞</a></li>
+                        <li><a href="#" title="Coming Soon">少司命</a></li>
+                        <li><a href="#" title="Coming Soon">赵玉平</a></li>
+                        <li><a href="#" title="Coming Soon">剑网3</a></li>
                     </ul>
                 </li>
-                <li id="giveaway"><a href="#">Giveaway</a></li>
+                <li id="giveaway"><a href="#" title="Coming Soon">Giveaway</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li id="guestbook"><a href="guestbook">Guestbook</a></li>
+                <li id="guestbook"><a href="guestbook" title="Coming Soon">Guestbook</a></li>
                 <li class="dropdown" id="about">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="about">Me</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#" title="Coming Soon">Resume</a></li>
+                        <li><a href="#" title="Coming Soon">Changelog</a></li>
                     </ul>
                 </li>
             </ul>
@@ -144,7 +144,7 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
 
-<script>$('#{{ $meta["active"] or "" }}').addClass('active');</script>
+<script>$('#@yield("active"){{ $meta["active"] or "" }}').addClass('active');</script>
 
 @yield('foot')
 </body>
