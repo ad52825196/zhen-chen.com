@@ -29,3 +29,8 @@ $(document.links).filter(function() {
 
 // leave space for footer
 $('body')[0].style.paddingBottom = $('footer').outerHeight(true) + 'px';
+
+// tooltip
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+})
