@@ -116,7 +116,7 @@
 <!-- Begin Footer -->
 <footer>
     <p class="text-muted">
-    Powered by <a href="//getbootstrap.com/">Bootstrap</a>, <a href="//www.cloudflare.com/">CloudFlare</a> and <a href="//m.do.co/c/abfc6e767656">DigitalOcean</a>
+    Powered by <a href="//laravel.com/">Laravel</a>, <a href="//www.cloudflare.com/">CloudFlare</a> and <a href="//m.do.co/c/abfc6e767656">DigitalOcean</a>
     Copyright <span class="fa fa-copyright"></span> 2013
     <script>
     var myDate = new Date(), t = myDate.getFullYear();
