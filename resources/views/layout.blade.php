@@ -69,15 +69,14 @@
                         <li><a href="#" title="Coming Soon">Footprints</a></li>
                         <li><a href="#" title="Coming Soon">Games</a></li>
                         <li><a href="#" title="Coming Soon">Movies</a></li>
+                        <li><a href="#" title="Coming Soon">Music</a></li>
                         <li><a href="#" title="Coming Soon">People</a></li>
                         <li><a href="#" title="Coming Soon">Softwares</a></li>
+                        <li><a href="#" title="Coming Soon">Storytelling</a></li>
                         <li><a href="#" title="Coming Soon">TV Shows</a></li>
                         <li><a href="#" title="Coming Soon">Websites</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#" title="Coming Soon">陈绮贞</a></li>
-                        <li><a href="#" title="Coming Soon">少司命</a></li>
-                        <li><a href="#" title="Coming Soon">赵玉平</a></li>
-                        <li><a href="#" title="Coming Soon">剑网3</a></li>
+                        <li><a href="#" title="Coming Soon">Special</a></li>
                     </ul>
                 </li>
                 <li id="giveaway"><a href="#" title="Coming Soon">Giveaway</a></li>
