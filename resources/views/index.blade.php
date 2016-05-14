@@ -18,6 +18,6 @@
 
     <p class="lead">Greetings from New Zealand! My name is Zhen Chen (陈桢). I was a student in IEEE class at <a href="http://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. Now I am studying Computer Science and Information System at <a href="https://www.auckland.ac.nz/en.html">The University of Auckland</a>. Currently, I am also a demonstrator for undergraduate labs in Computer Science department.</p>
 
-    <p class="lead">Feel free to <a href="about">contact me</a>, <a href="guestbook">say hello</a>, or read my <a href="//blog.zhen-chen.com/">blog</a>.</p>
+    <p class="lead">Feel free to <a href="about">contact me</a>, <a href="guestbook">say hello</a>, read my <a href="//blog.zhen-chen.com/">blog</a> or visit my <a href="//zhen-chen.xyz/">studio</a>.</p>
 </div>
 @endsection
