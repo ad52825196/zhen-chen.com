@@ -65,7 +65,6 @@
                     <ul class="dropdown-menu">
                         <li><a href="#" title="Coming Soon">Animations</a></li>
                         <li><a href="#" title="Coming Soon">Books</a></li>
-                        <li><a href="#" title="Coming Soon">Cards</a></li>
                         <li><a href="#" title="Coming Soon">Footprints</a></li>
                         <li><a href="#" title="Coming Soon">Games</a></li>
                         <li><a href="#" title="Coming Soon">Movies</a></li>
