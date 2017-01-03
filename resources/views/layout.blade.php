@@ -115,10 +115,10 @@
 <footer>
     <p class="text-muted">
     Powered by <a href="//laravel.com/">Laravel</a>, <a href="//www.cloudflare.com/">CloudFlare</a> and <a href="//m.do.co/c/abfc6e767656">DigitalOcean</a>
-    Copyright <span class="fa fa-copyright"></span> 2013
+    Copyright <span class="fa fa-copyright"></span>
     <script>
-    var myDate = new Date(), t = myDate.getFullYear();
-    if (t > 2013) { document.write("- ", t); }
+    var s = 2013, myDate = new Date(), t = myDate.getFullYear();
+    if (t > s) { document.write(s, " - ", t); } else { document.write(s); }
     </script>
     <a rel="license" href="//creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
     </p>
@@ -138,7 +138,6 @@
 </div>
 
 <script src="/js/jquery-1.11.3.min.js"></script>
-<script src="/js/jquery.lazyload.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
 
