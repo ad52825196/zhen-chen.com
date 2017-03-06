@@ -17,11 +17,6 @@ $('#to-top').affix({
     }
 });
 
-// lazy load for images
-$('img.lazy').lazyload({
-    threshold: 200
-});
-
 // add target attribute to links pointing to other sites
 $(document.links).filter(function() {
     return this.hostname != window.location.hostname;
@@ -34,3 +29,12 @@ $('body')[0].style.paddingBottom = $('footer').outerHeight(true) + 'px';
 $(function() {
     $('[data-toggle="tooltip"]').tooltip();
 })
+
+// pjax and nprogress
+$(document).pjax('a', '#body');
+$(document).on('pjax:start', function() { NProgress.start(); });
+$(document).on('pjax:end',   function() { NProgress.done();  });
+$(document).on('pjax:timeout', function(event) {
+    // Prevent default timeout redirection behavior
+    event.preventDefault()
+});
