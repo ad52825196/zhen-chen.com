@@ -1,6 +1,5 @@
 <footer>
-<div class="container">
-    <p class="text-muted">
+    <p>
     Page loaded at:
     <script>
     var myDate = new Date();
@@ -29,5 +28,4 @@
         <li><a href="https://github.com/ad52825196"><span class="fa fa-github fa-lg"></span></a></li>
         <li><a href="http://steamcommunity.com/profiles/76561198026604898"><span class="fa fa-steam-square fa-lg"></span></a></li>
     </ul>
-</div>
 </footer>
