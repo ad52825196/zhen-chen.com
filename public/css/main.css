@@ -154,3 +154,8 @@ footer ul {
 .uppercase {
     text-transform: uppercase;
 }
+
+/* center */
+.center {
+    text-align: center;
+}
