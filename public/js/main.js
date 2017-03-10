@@ -28,7 +28,7 @@ $('body')[0].style.paddingBottom = $('footer').outerHeight(true) + 'px';
 // tooltip
 $(function() {
     $('[data-toggle="tooltip"]').tooltip();
-})
+});
 
 // pjax and nprogress
 $(document).pjax('a', '#body');
@@ -36,5 +36,5 @@ $(document).on('pjax:start', function() { NProgress.start(); });
 $(document).on('pjax:end',   function() { NProgress.done();  });
 $(document).on('pjax:timeout', function(event) {
     // Prevent default timeout redirection behavior
-    event.preventDefault()
+    event.preventDefault();
 });
