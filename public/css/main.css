@@ -159,3 +159,9 @@ footer ul {
 .center {
     text-align: center;
 }
+
+/* index item */
+.index-item {
+    display: none;
+    text-align: justify;
+}

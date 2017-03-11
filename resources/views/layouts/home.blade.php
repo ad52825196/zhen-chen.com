@@ -27,6 +27,12 @@
 <body>
     @include('layouts.analytics')
 
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.pjax.js"></script>
+    <script src="/js/nprogress.js"></script>
+    <script src="/js/jquery.fullPage.min.js"></script>
+
     @section('menu')
     @include('layouts.menu')
     @show
@@ -45,11 +51,6 @@
     </div>
     @show
 
-    <script src="/js/jquery-3.1.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.pjax.js"></script>
-    <script src="/js/nprogress.js"></script>
-    <script src="/js/jquery.fullPage.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
