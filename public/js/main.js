@@ -34,6 +34,7 @@ $(function() {
 $(document).pjax('a:not([data-no-pjax])', '#body');
 $(document).on('pjax:start', function() { NProgress.start(); });
 $(document).on('pjax:end',   function() { NProgress.done();  });
+$(document).on('pjax:end',   function() { ga('send', 'pageview'); });
 $(document).on('pjax:timeout', function(event) {
     // Prevent default timeout redirection behavior
     event.preventDefault();
