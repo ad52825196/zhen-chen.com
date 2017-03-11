@@ -16,7 +16,6 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/weather-icons.min.css" />
     <link rel="stylesheet" href="/css/weather-icons-wind.min.css" />
