@@ -31,7 +31,7 @@ $(function() {
 });
 
 // pjax and nprogress
-$(document).pjax('a', '#body');
+$(document).pjax('a:not([data-no-pjax])', '#body');
 $(document).on('pjax:start', function() { NProgress.start(); });
 $(document).on('pjax:end',   function() { NProgress.done();  });
 $(document).on('pjax:timeout', function(event) {
