@@ -29,7 +29,7 @@
 
 <script>
 $('#body .index-item').each(function(index) {
-    $(this).delay(index * 200).fadeIn(200);
+    $(this).delay(index * 500).fadeIn(500);
 });
 </script>
 @stop
