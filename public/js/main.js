@@ -30,12 +30,14 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
 
-// pjax and nprogress
-$(document).pjax('a:not([data-no-pjax])', '#body');
-$(document).on('pjax:start', function() { NProgress.start(); });
-$(document).on('pjax:end',   function() { NProgress.done();  });
-$(document).on('pjax:end',   function() { ga('send', 'pageview'); });
-$(document).on('pjax:timeout', function(event) {
-    // Prevent default timeout redirection behavior
-    event.preventDefault();
-});
+// pjax and nprogress only enabled on large screen
+if ($(window).width() >= 768) {
+    $(document).pjax('a:not([data-no-pjax])', '#body');
+    $(document).on('pjax:start', function() { NProgress.start(); });
+    $(document).on('pjax:end',   function() { NProgress.done();  });
+    $(document).on('pjax:end',   function() { ga('send', 'pageview'); });
+    $(document).on('pjax:timeout', function(event) {
+        // Prevent default timeout redirection behavior
+        event.preventDefault();
+    });
+}

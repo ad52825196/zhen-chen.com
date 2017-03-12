@@ -97,7 +97,7 @@ nav ul li:active {
 }
 
 /* display dropdown menu when hovering */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
     /* for desktop */
     .navbar-nav > li:hover .dropdown-menu {
         display: block;
