@@ -29,19 +29,19 @@ class HomeController extends Controller
         $data['canonical'] = env('APP_URL') . '/';
         $data['pageIdentifier'] = 'index';
 
-        // cache number of rows in table 'quote'
+        // cache number of rows in table 'quotes'
         $minutes = 60;
-        $table = DB::table('quote');
-        $count = Cache::remember('quote.count', $minutes, function() use ($table) {
-            return $table -> count();
+        $table_quotes = DB::table('quotes');
+        $count = Cache::remember('quotes.count', $minutes, function() use ($table_quotes) {
+            return $table_quotes -> count();
         });
         // generate random quote id of the day
         $today = Carbon::today() -> timestamp;
         srand($today);
         $id = rand(1, $count);
         // cache quote of the day
-        $data['quote'] = Cache::remember("quote.$id", Carbon::tomorrow(), function() use ($table, $id) {
-            return $table -> where('id', $id) -> value('quote');
+        $data['quote'] = Cache::remember("quote.$id", Carbon::tomorrow(), function() use ($table_quotes, $id) {
+            return $table_quotes -> where('id', $id) -> value('quote');
         });
 
         if ($this -> isAjax) {
