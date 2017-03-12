@@ -1,9 +1,9 @@
 @extends('layouts.home')
 
 @section('body')
-<div class="jumbotron center">
+<div class="jumbotron">
     <div class="container">
-        <h1>"{{ $quote }}"</h1>
+        <h1 class="text-center">"{{ $quote }}"</h1>
     </div>
 </div>
 

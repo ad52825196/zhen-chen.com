@@ -22,7 +22,7 @@
     <a href="https://zhen-chen.xyz">Rainbow Studio</a>
     </p>
 
-    <ul class="social-icon flat-list">
+    <ul class="social-icon list-inline">
         <li><a href="https://www.facebook.com/profile.php?id=100008100810667"><span class="fa fa-facebook-official fa-lg"></span></a></li>
         <li><a href="http://weibo.com/chenzhen42"><span class="fa fa-weibo fa-lg"></span></a></li>
         <li><a href="https://github.com/ad52825196"><span class="fa fa-github fa-lg"></span></a></li>

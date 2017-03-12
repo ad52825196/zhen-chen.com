@@ -126,15 +126,9 @@ footer p {
     display: inline;
 }
 
-footer ul {
+footer .social-icon {
     float: right;
     margin-bottom: 0px;
-}
-
-.flat-list li {
-    list-style: none;
-    float: left;
-    margin-left: 10px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -148,16 +142,6 @@ footer ul {
 /* social icon */
 .social-icon .fa:hover {
     color: #141414;
-}
-
-/* uppercase */
-.uppercase {
-    text-transform: uppercase;
-}
-
-/* center */
-.center {
-    text-align: center;
 }
 
 /* index item */
