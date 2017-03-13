@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@index') -> name('index');
+
+Route::get('/guestbook', 'HomeController@guestbook') -> name('guestbook');

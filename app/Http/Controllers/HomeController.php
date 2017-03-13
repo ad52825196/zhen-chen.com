@@ -49,4 +49,16 @@ class HomeController extends Controller
         }
         return view('index', $data);
     }
+
+    public function guestbook() {
+        $data['keywords'] = 'Guestbook, 留言板, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
+        $data['title'] = 'Guestbook | ' . env('APP_NAME');
+        $data['canonical'] = env('APP_URL') . '/guestbook';
+        $data['pageIdentifier'] = 'guestbook';
+
+        if ($this -> isAjax) {
+            return $this -> handle('guestbook', $data);
+        }
+        return view('guestbook', $data);
+    }
 }

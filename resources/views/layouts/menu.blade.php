@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li id="home"><a href="/">Home</a></li>
-                <li><a href="#" title="Coming Soon">Blog</a></li>
+                <li><a href="https://blog.zhen-chen.com/">Blog</a></li>
                 <li class="dropdown" id="portfolio">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -27,6 +27,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="#" title="Coming Soon">Animation</a></li>
                         <li><a href="#" title="Coming Soon">Book</a></li>
+                        <li><a href="#" title="Coming Soon">Club</a></li>
                         <li><a href="#" title="Coming Soon">Footprint</a></li>
                         <li><a href="#" title="Coming Soon">Game</a></li>
                         <li><a href="#" title="Coming Soon">Movie</a></li>
@@ -40,11 +41,11 @@
                     </ul>
                 </li>
                 <li id="giveaway"><a href="#" title="Coming Soon">Giveaway</a></li>
-                <li id="guestbook"><a href="#">Guestbook</a></li>
+                <li id="guestbook"><a href="/guestbook">Guestbook</a></li>
                 <li class="dropdown" id="about">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Me</a></li>
+                        <li><a href="/me">Me</a></li>
                         <li><a href="#" title="Coming Soon">Resume</a></li>
                         <li><a href="#" title="Coming Soon">Status</a></li>
                         <li><a href="#" title="Coming Soon">Changelog</a></li>
