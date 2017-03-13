@@ -18,7 +18,7 @@
     <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
     Made by
     <a href="https://zhen-chen.com/">Zhen Chen</a>
-    <span class="fa fa-heart"></span>
+    <span class="fa fa-heart" aria-hidden="true"></span>
     <a href="https://zhen-chen.xyz">Rainbow Studio</a>
     </p>
 
