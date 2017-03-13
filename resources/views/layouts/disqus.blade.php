@@ -13,4 +13,4 @@
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the comments.</noscript>
+<noscript>{{ __('disqus.noscript') }}</noscript>
