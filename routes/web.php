@@ -14,3 +14,7 @@
 Route::get('/', 'HomeController@index') -> name('index');
 
 Route::get('/guestbook', 'HomeController@guestbook') -> name('guestbook');
+
+Route::get('/status', 'HomeController@status') -> name('status');
+
+Route::get('/changelog', 'HomeController@changelog') -> name('changelog');

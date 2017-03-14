@@ -61,4 +61,28 @@ class HomeController extends Controller
         }
         return view('guestbook', $data);
     }
+
+    public function status() {
+        $data['keywords'] = 'Status, 状态, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
+        $data['title'] = 'Status | ' . env('APP_NAME');
+        $data['canonical'] = env('APP_URL') . '/status';
+        $data['pageIdentifier'] = 'status';
+
+        if ($this -> isAjax) {
+            return $this -> handle('status', $data);
+        }
+        return view('status', $data);
+    }
+
+    public function changelog() {
+        $data['keywords'] = 'Changelog, 更新日志, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
+        $data['title'] = 'Changelog | ' . env('APP_NAME');
+        $data['canonical'] = env('APP_URL') . '/changelog';
+        $data['pageIdentifier'] = 'changelog';
+
+        if ($this -> isAjax) {
+            return $this -> handle('changelog', $data);
+        }
+        return view('changelog', $data);
+    }
 }
