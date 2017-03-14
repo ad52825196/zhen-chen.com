@@ -75,7 +75,7 @@ class HomeController extends Controller
     }
 
     public function changelog() {
-        $data['keywords'] = 'Changelog, 更新日志, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
+        $data['keywords'] = 'Changelog, 更新日志, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室, University of Auckland, 奥克兰大学, Auckland, 奥克兰';
         $data['title'] = 'Changelog | ' . env('APP_NAME');
         $data['canonical'] = env('APP_URL') . '/changelog';
         $data['pageIdentifier'] = 'changelog';

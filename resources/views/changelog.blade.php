@@ -8,4 +8,8 @@
         <p>{!! __('changelog.website') !!}</p>
     </div>
 </div>
+
+<div class="container">
+    {!! __('changelog.logs') !!}
+</div>
 @stop
