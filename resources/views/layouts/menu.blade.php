@@ -48,7 +48,7 @@
                         <li><a href="/me">Me</a></li>
                         <li><a href="#" title="Coming Soon">Resume</a></li>
                         <li><a href="#" title="Coming Soon">Status</a></li>
-                        <li><a href="#" title="Coming Soon">Changelog</a></li>
+                        <li><a href="/changelog">Changelog</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="lang">
