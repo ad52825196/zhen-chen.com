@@ -3,8 +3,8 @@
 @section('body')
 <div class="jumbotron">
     <div class="container">
-        <h1>{{ __('guestbook.guestbook') }}</h1>
-        <p>{{ __('guestbook.guestbook_desc') }}</p>
+        <h1>{{ __('guestbook.title') }}</h1>
+        <p>{{ __('guestbook.desc') }}</p>
         <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#donate-modal">{{ __('guestbook.donate') }}</button></p>
     </div>
 </div>
