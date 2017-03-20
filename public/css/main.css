@@ -148,3 +148,14 @@ footer .social-icon {
 .index-item {
     display: none;
 }
+
+/* changelog */
+.changelog h1 {
+    color: #1986e6;
+    text-shadow: 1px 1px #efefef, 3px 3px #b3cee6;
+}
+
+.changelog h3 {
+    color: #666666;
+    font-weight: 900;
+}
