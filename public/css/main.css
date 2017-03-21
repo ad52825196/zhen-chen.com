@@ -152,7 +152,8 @@ footer .social-icon {
 /* changelog */
 .changelog h1 {
     color: #1986e6;
-    text-shadow: 1px 1px #efefef, 2px 2px #b3cee6;
+    text-shadow: 1px 1px #efefef, 3px 3px #b3cee6;
+    font-weight: 900;
 }
 
 .changelog h3 {
