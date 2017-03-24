@@ -149,6 +149,33 @@ footer .social-icon {
     display: none;
 }
 
+/* status */
+.status span {
+    font-weight: bold;
+}
+
+.status ul {
+    list-style-position: inside;
+}
+
+.mystatus span {
+    color: green;
+}
+
+.yourstatus span {
+    color: red;
+}
+
+#clock {
+    color: green;
+    font-size: 24px;
+}
+
+#clock > div {
+    padding: 10px;
+    display: inline-block;
+}
+
 /* changelog */
 .changelog h1 {
     color: #1986e6;
