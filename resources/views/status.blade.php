@@ -4,7 +4,8 @@
 <div class="container status text-center">
 <div class="mystatus">
     <h1 class="text-left">My status</h1>
-    <p>Zhen is <span>alive</span>. <small>Cogito, ergo sum.</small></p>
+    <p id="alive">Zhen is <span>alive</span>. <small>Cogito, ergo sum.</small></p>
+    <p id="dead">Zhen is <span>dead</span>.</p>
     <p>Zhen is <span>looking for jobs</span>.</p>
     <p>
     Zhen has <a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish"><span>1</span></a> wish for his life.
@@ -76,6 +77,9 @@
 
 <script>
 function getTimeRemaining(time) {
+    if (time < 0) {
+        time = 0;
+    }
     var seconds = time % 60;
     var minutes = Math.floor(time / 60) % 60;
     var hours = Math.floor(time / (60 * 60)) % 24;
@@ -104,6 +108,8 @@ function countdownClock(id, time) {
 
         if (t.total <= 0) {
             clearInterval(timeinterval);
+            $('#alive').hide();
+            $('#dead').show();
         }
     }
 
@@ -127,6 +133,7 @@ function startTimer(display) {
 
 var deadline = '2083-01-01'; // am i too optimistic?
 var time = Math.floor((Date.parse(deadline) - Date.parse(new Date())) / 1000);
+$('#dead').hide();
 countdownClock('#clock', time);
 startTimer($('#wastetime'));
 </script>
