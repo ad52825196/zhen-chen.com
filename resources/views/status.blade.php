@@ -3,75 +3,61 @@
 @section('body')
 <div class="container status text-center">
 <div class="mystatus">
-    <h1 class="text-left">My status</h1>
-    <p id="alive">Zhen is <span>alive</span>. <small>Cogito, ergo sum.</small></p>
-    <p id="dead">Zhen is <span>dead</span>.</p>
-    <p>Zhen is <span>looking for jobs</span>.</p>
+    <h1 class="text-left">{{ __('status.my_status') }}</h1>
+    <p id="alive">{!! __('status.alive') !!}</p>
+    <p id="dead">{!! __('status.dead') !!}</p>
+    <p>{!! __('status.doing') !!}</p>
     <p>
-    Zhen has <a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish"><span>1</span></a> wish for his life.
-    <div class="collapse" id="wish">
-        <div class="well">
-            <ul>
-                <li>To enjoy countless wealth with ever-healthy family members in a peaceful world. Nothing more.</li>
-            </ul>
-        </div>
-    </div>
+    {!! __('status.wish') !!}
     </p>
     <p>
-    Zhen has <a href="#lifegoal" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="lifegoal"><span>3</span></a> life goals to achieve.
-    <div class="collapse" id="lifegoal">
-        <div class="well">
-            <ul>
-                <li>(hidden)</li>
-                <li>To visit Niagara Falls, Tekapo, and a secret place with her before 30.</li>
-                <li>To give her happy life.</li>
-            </ul>
-        </div>
-    </div>
+    {!! __('status.life_goal') !!}
     </p>
-    <p>Zhen has <span>3</span> short term goals to achieve.</p>
-    <p>Zhen has <span>4</span> projects to do.</p>
-    <p>Zhen has more than <span>50</span> books to read.</p>
-    <p>Zhen has more than <span>100</span> games to play.</p>
-    <p>Zhen has more than <span>100</span> movies to watch.</p>
-    <p>Zhen has more than <span>150</span> videos to watch.</p>
+    <p>{!! __('status.short_term_goal') !!}</p>
     <p>
-    Zhen has an estimated expectancy of
+    {!! __('status.project') !!}
+    </p>
+    <p>{!! __('status.book') !!}</p>
+    <p>{!! __('status.game') !!}</p>
+    <p>{!! __('status.movie') !!}</p>
+    <p>{!! __('status.video') !!}</p>
+    <p>
+    {{ __('status.expectancy_1') }}
     <div id="clock">
     <div>
         <span class="days"></span>
-        <div><small>days</small></div>
+        <div><small>{{ __('status.days') }}</small></div>
     </div>
     <div>
         <span class="hours"></span>
-        <div><small>hours</small></div>
+        <div><small>{{ __('status.hours') }}</small></div>
     </div>
     <div>
         <span class="minutes"></span>
-        <div><small>minutes</small></div>
+        <div><small>{{ __('status.minutes') }}</small></div>
     </div>
     <div>
         <span class="seconds"></span>
-        <div><small>seconds</small></div>
+        <div><small>{{ __('status.seconds') }}</small></div>
     </div>
     </div>
-    left to live his life.
+    {{ __('status.expectancy_2') }}
     </p>
-    <p>When Zhen is dead, he will no longer be able to love, to code, to play, to dream a dream, or to pursue his life goals.</p>
+    <p>{!! __('status.end') !!}</p>
 
 </div>
 
 <hr />
 
 <div class="yourstatus">
-    <h1 class="text-left">Your status</h1>
-    <p>You have wasted <span id="wastetime"></span> of your life looking at this boring page.</p>
+    <h1 class="text-left">{{ __('status.your_status') }}</h1>
+    <p>{!! __('status.waste') !!}</p>
 </div>
 
 <hr />
 
 <div class="text-left">
-<p>Last updated on <strong>24 March 2017</strong></p>
+<p>{!! __('status.update') !!}</p>
 </div>
 </div>
 
@@ -122,9 +108,9 @@ function startTimer(display) {
         minutes = Math.floor(timer / 60);
         seconds = timer % 60;
 
-        text = seconds + " seconds";
+        text = seconds + " {{ __('status.seconds') }}";
         if (minutes > 0) {
-            text = minutes + " minutes " + text;
+            text = minutes + " {{ __('status.minutes') }} " + text;
         }
         display.html(text);
         ++timer;
