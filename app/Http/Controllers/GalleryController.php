@@ -17,6 +17,7 @@ class GalleryController extends HomeController
 
         $minutes = 60;
         $table_peoples = DB::table('peoples');
+        $data['people'] = [];
 
         if ($this -> isAjax) {
             return $this -> handle('gallery.people', $data);
