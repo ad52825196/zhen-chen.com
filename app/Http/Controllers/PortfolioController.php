@@ -65,4 +65,20 @@ class PortfolioController extends HomeController
         }
         return view('portfolio.video', $data);
     }
+
+    public function translation() {
+        $data['keywords'] = 'Translation, 汉化, 蒹葭汉化组, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
+        $data['title'] = 'Translation | ' . env('APP_NAME');
+        $data['canonical'] = env('APP_URL') . '/portfolio/translation';
+        $data['pageIdentifier'] = 'translation';
+
+        $minutes = 60;
+        $table_translations = DB::table('translations');
+        $data['translations'] = [];
+
+        if ($this -> isAjax) {
+            return $this -> handle('portfolio.translation', $data);
+        }
+        return view('portfolio.translation', $data);
+    }
 }
