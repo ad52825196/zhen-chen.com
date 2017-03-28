@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -22,7 +23,7 @@ class GalleryController extends HomeController
         });
         $result = array();
         foreach ($people as $person) {
-            $temp['name'] = $person -> {'name_' . $this -> locale};
+            $temp['name'] = $person -> {'name_' . App::getLocale()};
             if ($temp['name'] === null) {
                 $default_lang = $person -> default_lang;
                 $temp['name'] = $person -> {'name_' . $default_lang};

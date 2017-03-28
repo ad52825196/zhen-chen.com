@@ -10,12 +10,10 @@ use Carbon\Carbon;
 
 class HomeController extends Controller
 {
-    protected $locale;
     protected $request;
     protected $isAjax;
 
     public function __construct(Request $request) {
-        $this -> locale = App::getLocale();
         $this -> request = $request;
         $this -> isAjax = $request -> ajax() || $request -> pjax();
     }
