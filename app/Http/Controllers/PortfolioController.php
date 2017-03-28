@@ -34,7 +34,31 @@ class PortfolioController extends HomeController
 
         $minutes = 60;
         $table_videos = DB::table('videos');
-        $data['videos'] = [];
+        $videos = Cache::remember('videos', $minutes, function() use ($table_videos) {
+            return $table_videos -> orderBy('id', 'desc') -> get();
+        });
+        $result = array();
+        foreach ($videos as $video) {
+            $temp['id'] = $video -> id;
+            $temp['name'] = $video -> name;
+            $temp['source'] = $video -> source;
+            switch ($video -> source) {
+                case 'youku':
+                    $temp['link'] = 'http://v.youku.com/v_show/id_' . $video -> link . '.html';
+                    $temp['link_name'] = '优酷';
+                    break;
+                case 'youtube':
+                    $temp['link'] = 'https://www.youtube.com/watch?v=' . $video -> link;
+                    $temp['link_name'] = 'YouTube';
+                    break;
+                default:
+                    $temp['link'] = $video -> link;
+                    $temp['link_name'] = $video -> source;
+                    break;
+            }
+            $result[] = $temp;
+        }
+        $data['videos'] = $result;
 
         if ($this -> isAjax) {
             return $this -> handle('portfolio.video', $data);

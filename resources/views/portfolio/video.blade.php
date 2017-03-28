@@ -19,8 +19,13 @@
     <tbody>
         @foreach ($videos as $video)
         <tr>
+            <td>{{ $video['id'] }}. </td>
             <td>{{ $video['name'] }}</td>
+            @if ($video['source'] === null)
+            <td>Not available</td>
+            @else
             <td><a href="{{ $video['link'] }}">{{ $video['link_name'] }}</a></td>
+            @endif
         </tr>
         @endforeach
     </tbody>
