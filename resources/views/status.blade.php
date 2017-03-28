@@ -44,7 +44,6 @@
     {{ __('status.expectancy_2') }}
     </p>
     <p>{!! __('status.end') !!}</p>
-
 </div>
 
 <hr />
