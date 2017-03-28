@@ -17,7 +17,20 @@ class GalleryController extends HomeController
 
         $minutes = 60;
         $table_peoples = DB::table('peoples');
-        $data['people'] = [];
+        $people = Cache::remember('peoples', $minutes, function() use ($table_peoples) {
+            return $table_peoples -> get();
+        });
+        $result = array();
+        foreach ($people as $person) {
+            $temp['name'] = $person -> {'name_' . $this -> locale};
+            if ($temp['name'] === null) {
+                $default_lang = $person -> default_lang;
+                $temp['name'] = $person -> {'name_' . $default_lang};
+            }
+            $temp['link'] = $person -> link;
+            $result[] = $temp;
+        }
+        $data['people'] = $result;
 
         if ($this -> isAjax) {
             return $this -> handle('gallery.people', $data);

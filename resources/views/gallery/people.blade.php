@@ -13,8 +13,8 @@
     <tbody>
         @foreach ($people as $person)
         <tr>
-            <td>{{ $person->name }}</td>
-            <td>{{ $person->link }}</td>
+            <td>{{ $person['name'] }}</td>
+            <td><a href="{{ $person['link'] }}">{{ $person['link'] }}</a></td>
         </tr>
         @endforeach
     </tbody>
