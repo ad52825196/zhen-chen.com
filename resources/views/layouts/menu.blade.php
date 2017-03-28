@@ -17,9 +17,9 @@
                 <li class="dropdown" id="portfolio">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#" title="Coming Soon">Project</a></li>
-                        <li><a href="#" title="Coming Soon">Video</a></li>
-                        <li><a href="#" title="Coming Soon">Translation</a></li>
+                        <li><a href="/portfolio/project">Project</a></li>
+                        <li><a href="/portfolio/video">Video</a></li>
+                        <li><a href="/portfolio/translation">Translation</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="gallery">
@@ -32,7 +32,7 @@
                         <li><a href="#" title="Coming Soon">Game</a></li>
                         <li><a href="#" title="Coming Soon">Movie</a></li>
                         <li><a href="#" title="Coming Soon">Music</a></li>
-                        <li><a href="#" title="Coming Soon">People</a></li>
+                        <li><a href="/gallery/people">People</a></li>
                         <li><a href="#" title="Coming Soon">Software</a></li>
                         <li><a href="#" title="Coming Soon">Storytelling</a></li>
                         <li><a href="#" title="Coming Soon">Website</a></li>
