@@ -72,4 +72,9 @@
 
     <h1 id="2018">2018</h1>
 </div>
+
+<!-- Comment -->
+<div class="container">
+    @include('layouts.disqus')
+</div>
 @stop
