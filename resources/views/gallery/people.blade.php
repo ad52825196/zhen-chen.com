@@ -1,8 +1,19 @@
 @extends('layouts.home')
 
 @section('body')
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center">{{ __('people.title') }}</h1>
+    </div>
+</div>
+
 <div class="container">
-<h1 class="text-center">{{ __('people.title') }}</h1>
+<ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a>Gallery</a></li>
+    <li class="active">People</li>
+</ol>
+
 <table class="table table-hover">
     <thead>
         <tr>
@@ -19,5 +30,10 @@
         @endforeach
     </tbody>
 </table>
+</div>
+
+<!-- Comment -->
+<div class="container">
+    @include('layouts.disqus')
 </div>
 @stop
