@@ -46,6 +46,8 @@ a:active {
     text-shadow: 1px 1px #efefef, 2px 2px #cccccc;
 }
 
+.btn:hover,
+.btn:active,
 .navbar a:hover,
 .navbar a:active,
 footer a:hover,

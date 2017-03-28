@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="author" content="Zhen Chen" />
-    <meta name="keywords" content="{{ $keywords }}" />
+    <meta name="keywords" content="{{ $keywords or '' }}" />
 
     @section('title')
-    <title>{{ $title }}</title>
+    <title>{{ $title or env('APP_NAME') }}</title>
     @show
 
-    <link rel="canonical" href="{{ $canonical }}" />
+    <link rel="canonical" href="{{ $canonical or '' }}" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
