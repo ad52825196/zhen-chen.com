@@ -41,9 +41,12 @@ a,
 }
 
 /* link shadow */
-a:hover,
-a:active {
-    text-shadow: 1px 1px #efefef, 2px 2px #cccccc;
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    a:hover,
+    a:active {
+        text-shadow: 1px 1px #efefef, 2px 2px #cccccc;
+    }
 }
 
 .btn:hover,
