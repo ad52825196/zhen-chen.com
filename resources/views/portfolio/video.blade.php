@@ -30,6 +30,8 @@
         @endforeach
     </tbody>
 </table>
+
+<p><img src="/images/business card.png" /></p>
 </div>
 
 <!-- Comment -->
