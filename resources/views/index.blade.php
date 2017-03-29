@@ -3,7 +3,7 @@
 @section('body')
 <div class="jumbotron">
     <div class="container">
-        <h1 class="text-center">"{{ $quote }}"</h1>
+        <h1 class="text-center">"{{ $quote or env('APP_NAME') }}"</h1>
     </div>
 </div>
 
