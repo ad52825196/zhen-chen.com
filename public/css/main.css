@@ -58,6 +58,11 @@ footer a:active {
     text-shadow: none;
 }
 
+/* responsive image size */
+img {
+    max-width: 100%;
+}
+
 /* to top button */
 #to-top {
     width: 40px;
