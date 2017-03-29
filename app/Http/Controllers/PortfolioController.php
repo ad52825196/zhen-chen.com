@@ -34,8 +34,9 @@ class PortfolioController extends HomeController
 
         $minutes = 60;
         $table_videos = DB::table('videos');
-        $videos = Cache::remember('videos', $minutes, function() use ($table_videos) {
-            return $table_videos -> orderBy('id', 'desc') -> get();
+        $page = $this -> request -> input('page', 1);
+        $videos = Cache::remember("videos.$page", $minutes, function() use ($table_videos) {
+            return $table_videos -> orderBy('id', 'desc') -> paginate(30);
         });
         $result = array();
         foreach ($videos as $video) {
@@ -59,6 +60,7 @@ class PortfolioController extends HomeController
             $result[] = $temp;
         }
         $data['videos'] = $result;
+        $data['links'] = $videos -> links();
 
         if ($this -> isAjax) {
             return $this -> handle('portfolio.video', $data);

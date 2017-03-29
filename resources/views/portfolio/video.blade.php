@@ -15,6 +15,7 @@
     <li class="active">Video</li>
 </ol>
 
+{{ $links or '' }}
 <table class="table table-hover">
     <tbody>
         @foreach ($videos as $video)
@@ -30,6 +31,7 @@
         @endforeach
     </tbody>
 </table>
+{{ $links or '' }}
 
 <p><img src="/images/business card.png" /></p>
 </div>
