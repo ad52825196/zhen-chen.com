@@ -25,10 +25,10 @@ class HomeController extends Controller
     }
 
     protected function getContentByLocale($name, $row) {
-        $result = $row -> {"$name_" . App::getLocale()};
+        $result = $row -> {$name . '_' . App::getLocale()};
         if ($result === null) {
             $default_lang = $row -> default_lang;
-            $result = $row -> {"$name_" . $default_lang};
+            $result = $row -> {$name . '_' . $default_lang};
         }
         return $result;
     }
