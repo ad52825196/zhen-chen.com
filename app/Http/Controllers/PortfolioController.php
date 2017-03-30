@@ -33,10 +33,11 @@ class PortfolioController extends HomeController
         $data['pageIdentifier'] = 'video';
 
         $minutes = 60;
-        $table_videos = DB::table('videos');
+        $perPage = 30;
         $page = $this -> request -> input('page', 1);
-        $videos = Cache::remember("videos.$page", $minutes, function() use ($table_videos) {
-            return $table_videos -> orderBy('id', 'desc') -> paginate(30);
+        $table_videos = DB::table('videos');
+        $videos = Cache::remember("videos.$page", $minutes, function() use ($table_videos, $perPage) {
+            return $table_videos -> orderBy('id', 'desc') -> paginate($perPage);
         });
         $result = array();
         foreach ($videos as $video) {
