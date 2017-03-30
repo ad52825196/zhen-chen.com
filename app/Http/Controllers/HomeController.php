@@ -24,6 +24,15 @@ class HomeController extends Controller
         return $sections['title'] . $sections['body'];
     }
 
+    protected function getContentByLocale($name, $row) {
+        $result = $row -> {"$name_" . App::getLocale()};
+        if ($result === null) {
+            $default_lang = $row -> default_lang;
+            $result = $row -> {"$name_" . $default_lang};
+        }
+        return $result;
+    }
+
     public function index() {
         $data['keywords'] = 'Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
         $data['title'] = env('APP_NAME') . ' | 飞越彩虹';

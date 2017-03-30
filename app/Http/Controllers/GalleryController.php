@@ -23,11 +23,7 @@ class GalleryController extends HomeController
         });
         $result = array();
         foreach ($people as $person) {
-            $temp['name'] = $person -> {'name_' . App::getLocale()};
-            if ($temp['name'] === null) {
-                $default_lang = $person -> default_lang;
-                $temp['name'] = $person -> {'name_' . $default_lang};
-            }
+            $temp['name'] = $this -> getContentByLocale('name', $person);
             $temp['link'] = $person -> link;
             $result[] = $temp;
         }
