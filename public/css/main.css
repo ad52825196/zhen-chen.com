@@ -168,11 +168,17 @@ footer .social-icon {
     list-style-position: inside;
 }
 
-.mystatus span {
+.mystatus span,
+.mystatus span:hover,
+.mystatus span:active,
+.mystatus a:hover,
+.mystatus a:active {
     color: green;
 }
 
-.yourstatus span {
+.yourstatus span,
+.yourstatus span:hover,
+.yourstatus span:active {
     color: red;
 }
 
