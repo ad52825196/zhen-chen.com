@@ -76,7 +76,7 @@ class PortfolioController extends HomeController
         $data['pageIdentifier'] = 'translation';
 
         $minutes = 60;
-        $perPage = 10;
+        $perPage = 5;
         $page = $this -> request -> input('page', 1);
         $table_translations = DB::table('translations') -> join('translations_role', 'translations.role_id', '=', 'translations_role.id');
         $translations = Cache::remember("translations.$page", $minutes, function() use ($table_translations, $perPage) {
