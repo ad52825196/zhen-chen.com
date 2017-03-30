@@ -10,7 +10,7 @@ return [
     'alive' => 'Zhen is <span>alive</span>. <small>Cogito, ergo sum.</small>',
     'dead' => 'Zhen is <span>dead</span>.',
     'doing' => 'Zhen is <span>looking for jobs</span>.',
-    'wish' => 'Zhen has <a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish"><span>1</span></a> wish for his life.
+    'wish' => 'Zhen has <a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish" data-no-pjax><span>1</span></a> wish for his life.
     <div class="collapse" id="wish">
         <div class="well">
             <ul>
@@ -18,7 +18,7 @@ return [
             </ul>
         </div>
     </div>',
-    'life_goal' => 'Zhen has <a href="#lifegoal" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="lifegoal"><span>3</span></a> life goals to achieve.
+    'life_goal' => 'Zhen has <a href="#lifegoal" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="lifegoal" data-no-pjax><span>3</span></a> life goals to achieve.
     <div class="collapse" id="lifegoal">
         <div class="well">
             <ul>
@@ -29,7 +29,7 @@ return [
         </div>
     </div>',
     'short_term_goal' => 'Zhen has <span>3</span> short term goals to achieve.',
-    'project' => 'Zhen has <a href="#project" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="project"><span>5</span></a> projects to do.
+    'project' => 'Zhen has <a href="#project" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="project" data-no-pjax><span>5</span></a> projects to do.
     <div class="collapse" id="project">
         <div class="well">
             <ul>

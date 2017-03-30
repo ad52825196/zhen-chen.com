@@ -10,7 +10,7 @@ return [
     'alive' => '桢现在<span>活着</span>。<small>我思故我在。</small>',
     'dead' => '桢已经<span>死了</span>。',
     'doing' => '桢正在<span>找工作</span>。',
-    'wish' => '桢有<a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish"><span>1</span></a>个人生愿望。
+    'wish' => '桢有<a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish" data-no-pjax><span>1</span></a>个人生愿望。
     <div class="collapse" id="wish">
         <div class="well">
             <ul>
@@ -18,7 +18,7 @@ return [
             </ul>
         </div>
     </div>',
-    'life_goal' => '桢有<a href="#lifegoal" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="lifegoal"><span>3</span></a>个人生目标。
+    'life_goal' => '桢有<a href="#lifegoal" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="lifegoal" data-no-pjax><span>3</span></a>个人生目标。
     <div class="collapse" id="lifegoal">
         <div class="well">
             <ul>
@@ -29,7 +29,7 @@ return [
         </div>
     </div>',
     'short_term_goal' => '桢有<span>3</span>个短期目标。',
-    'project' => '桢有<a href="#project" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="project"><span>5</span></a>个项目要完成。
+    'project' => '桢有<a href="#project" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="project" data-no-pjax><span>5</span></a>个项目要完成。
     <div class="collapse" id="project">
         <div class="well">
             <ul>
