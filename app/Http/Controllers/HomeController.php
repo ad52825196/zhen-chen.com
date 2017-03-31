@@ -12,22 +12,24 @@ class HomeController extends Controller
 {
     protected $request;
     protected $url;
+    protected $path;
     protected $isAjax;
 
     public function __construct(Request $request) {
         $this -> request = $request;
         $this -> url = $request -> url();
+        $this -> path = $request -> path();
         $this -> isAjax = $request -> ajax() || $request -> pjax();
 
         // record pageview
-        if (strlen($this -> url) <= 255) {
+        if (strlen($this -> path) <= 255) {
             DB::transaction(function() {
                 $table = DB::table('posts');
-                $exists = $table -> where('url', $this -> url) -> exists();
+                $exists = $table -> where('path', $this -> path) -> exists();
                 if ($exists) {
-                    $table -> where('url', $this -> url) -> increment('pageview');
+                    $table -> where('path', $this -> path) -> increment('pageview');
                 } else {
-                    $table -> insert(['url' => $this -> url, 'pageview' => 1]);
+                    $table -> insert(['path' => $this -> path, 'pageview' => 1]);
                 }
             }, 5);
         }
