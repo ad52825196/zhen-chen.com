@@ -110,7 +110,7 @@ class HomeController extends Controller
         $minutes = 60;
         $table_changelogs = DB::table('changelogs');
         $changelogs = Cache::remember('changelogs', $minutes, function() use ($table_changelogs) {
-            return $table_changelogs -> get();
+            return $table_changelogs -> orderBy('time', 'asc') -> get();
         });
         $result = array();
         foreach ($changelogs as $changelog) {
