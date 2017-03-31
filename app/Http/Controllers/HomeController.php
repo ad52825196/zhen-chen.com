@@ -107,6 +107,22 @@ class HomeController extends Controller
         $data['canonical'] = env('APP_URL') . '/changelog';
         $data['pageIdentifier'] = 'changelog';
 
+        $minutes = 60;
+        $table_changelogs = DB::table('changelogs');
+        $changelogs = Cache::remember('changelogs', $minutes, function() use ($table_changelogs) {
+            return $table_changelogs -> get();
+        });
+        $result = array();
+        foreach ($changelogs as $changelog) {
+            $temp['time'] = $changelog -> time;
+            $temp['log'] = $this -> getContentByLocale('log', $changelog);
+            $result[] = $temp;
+        }
+        $collection = collect($result);
+        $data['changelogs'] = $collection -> groupBy('time') -> groupBy(function ($item, $key) {
+            return substr($key, 0, 4);
+        }) -> toArray();
+
         if ($this -> isAjax) {
             return $this -> handle('changelog', $data);
         }
