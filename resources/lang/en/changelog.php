@@ -32,6 +32,7 @@ return [
     '2016_12' => '<li>Won Best BSc in Information System Award.</li><li><em>DNSSEC</em> enabled.</li><li><em>HSTS</em> enabled.</li><li>Rainbow Shadowsocks went alive. <a href="https://ss.zhen-chen.xyz">#</a></li>',
 
     '2017_02' => '<li>Rainbow Studio went alive. <a href="https://zhen-chen.xyz">#</a></li><li>Won Senior Scholar Award in the Faculty of Science.</li>',
-    '2017_03' => '<li>Personal website 3.0 published built using <em>Laravel</em> with <em>pjax</em>.</li>',
+    '2017_03' => '<li>Personal website 3.0 published built using <em>Laravel</em> with <em>pjax</em>.</li><li>Pageviews tracking enabled.</li>',
+    '2017_04' => '<li>Online CV published.</li>',
     '2017_05' => '<li>Graduated with a Bachelor of Science Degree in Computer Science and Information System from the <a href="https://www.auckland.ac.nz/">University of Auckland</a>.</li>',
 ];

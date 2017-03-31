@@ -32,6 +32,7 @@ return [
     '2016_12' => '<li>获得 Best BSc in Information System 奖。</li><li><em>DNSSEC</em> 启用。</li><li><em>HSTS</em> 启用。</li><li>彩虹影梭上线。 <a href="https://ss.zhen-chen.xyz">#</a></li>',
 
     '2017_02' => '<li>彩虹工作室上线。 <a href="https://zhen-chen.xyz">#</a></li><li>获得 Senior Scholar Award in the Faculty of Science 奖。</li>',
-    '2017_03' => '<li>个人网站 3.0 上线，使用 <em>Laravel</em> 和 <em>pjax</em> 技术。</li>',
+    '2017_03' => '<li>个人网站 3.0 上线，使用 <em>Laravel</em> 和 <em>pjax</em> 技术。</li><li>页面浏览量统计启用。</li>',
+    '2017_04' => '<li>在线简历发布。</li>',
     '2017_05' => '<li>从<a href="https://www.auckland.ac.nz/">奥克兰大学</a>毕业，获得理学士学位，计算机科学和信息系统专业。</li>',
 ];
