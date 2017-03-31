@@ -11,11 +11,26 @@ use Carbon\Carbon;
 class HomeController extends Controller
 {
     protected $request;
+    protected $url;
     protected $isAjax;
 
     public function __construct(Request $request) {
         $this -> request = $request;
+        $this -> url = $request -> url();
         $this -> isAjax = $request -> ajax() || $request -> pjax();
+
+        // record pageview
+        if (strlen($this -> url) <= 255) {
+            DB::transaction(function() {
+                $table = DB::table('posts');
+                $exists = $table -> where('url', $this -> url) -> exists();
+                if ($exists) {
+                    $table -> where('url', $this -> url) -> increment('pageview');
+                } else {
+                    $table -> insert(['url' => $this -> url, 'pageview' => 1]);
+                }
+            }, 5);
+        }
     }
 
     protected function handle($view, $data) {
