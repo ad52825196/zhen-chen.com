@@ -23,7 +23,7 @@ return [
         <div class="well">
             <ul>
                 <li>(hidden)</li>
-                <li>To visit Niagara Falls, Tekapo, and a secret place with her before 30.</li>
+                <li>To visit Niagara Falls, Tekapo, and a secret place with her if she appears in my life before 30.</li>
                 <li>To give her happy life.</li>
             </ul>
         </div>
