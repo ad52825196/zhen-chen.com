@@ -9,7 +9,16 @@
     </div>
 </div>
 
-<div class="container changelog">
+<div class="container">
+<ol class="breadcrumb">
+    @forelse (array_reverse(array_keys($changelogs)) as $year)
+    <li><a href="#{{ $year }}">{{ $year }}</a></li>
+    @empty
+    <li class="active">No records.</li>
+    @endforelse
+</ol>
+
+<div class="changelog">
 @foreach ($changelogs as $key => $value)
     <h1 id="{{ $key }}">{{ $key }}</h1>
     @foreach ($value as $logs)
@@ -21,6 +30,7 @@
         </ul>
     @endforeach
 @endforeach
+</div>
 </div>
 
 <!-- Comment -->
