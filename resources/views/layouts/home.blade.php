@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="/css/nprogress.css" />
     <link rel="stylesheet" href="/css/jquery.fullPage.css" />
     <link rel="stylesheet" href="/css/main.css" />
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
     @include('layouts.analytics')

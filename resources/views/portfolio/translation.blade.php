@@ -37,6 +37,18 @@
 {{ $links or '' }}
 </div>
 
+<!-- Ad -->
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        @include('ads.main1')
+    </div>
+    <div class="col-md-6">
+        @include('ads.main2')
+    </div>
+</div>
+</div>
+
 <!-- Comment -->
 <div class="container">
     @include('layouts.disqus')
