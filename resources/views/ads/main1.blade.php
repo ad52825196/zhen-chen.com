@@ -1,3 +1,4 @@
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- zhen-chen.com-main-1 -->
 <ins class="adsbygoogle"
      style="display:block"
