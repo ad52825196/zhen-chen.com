@@ -203,3 +203,10 @@ footer .social-icon {
     color: #666666;
     font-weight: 900;
 }
+
+/* project */
+.project h1 {
+    color: #1986e6;
+    text-shadow: 1px 1px #efefef, 3px 3px #b3cee6;
+    font-weight: 600;
+}

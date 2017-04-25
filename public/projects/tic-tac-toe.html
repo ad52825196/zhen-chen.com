@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-tac-toe | Project | Portfolio | Zhen Chen</title>
+    <style>
+    h1, h2, h3, h4
+    {
+        text-align: center;
+    }
+    table
+    {
+        margin: auto;
+    }
+    #game, #score
+    {
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    #turn td
+    {
+        width: 120px;
+        text-align: center;
+    }
+    #game tr
+    {
+        height: 50px;
+    }
+    #game td
+    {
+        width: 50px;
+        border: 1px solid;
+        text-align: center;
+        vertical-align: center;
+        font-size: 26px;
+        font-family: Arial;
+    }
+    #score th, #score td
+    {
+        width: 60px;
+        border: 1px solid;
+        text-align: center;
+    }
+    #player1
+    {
+        visibility: hidden;
+    }
+    #player2
+    {
+        visibility: hidden;
+    }
+    .button
+    {
+        width: 36px;
+        height: 36px;
+    }
+    #again
+    {
+        visibility: hidden;
+    }
+    </style>
+    <script>
+    function tictactoe(x, y)
+    {
+        var sign = "";
+        var i = 0;
+        var button;
+
+        if (player1.style.visibility == "visible")
+            sign = "O";
+        else
+            sign = "X";
+        document.getElementById("cell" + x + y).innerHTML = sign;
+        step.value++;
+        whowins = checkwin();
+        switch (whowins)
+        {
+            case 0:
+                player1.style.visibility = "hidden";
+                player2.style.visibility = "hidden";
+                winner.innerHTML = "Tied!";
+                again.style.visibility = "visible";
+                break;
+            case 1:
+            case 2:
+                player1.style.visibility = "hidden";
+                player2.style.visibility = "hidden";
+                winner.innerHTML = "Player " + whowins + " wins!";
+                document.getElementById("score" + whowins).innerHTML++;
+                again.style.visibility = "visible";
+                button = document.getElementsByClassName("button");
+                for (i=0; i<button.length; i++)
+                    button.item(i).style.visibility = "hidden";
+                break;
+            default:
+                changeplayer();
+        }
+    }
+
+    function checkwin()
+    {
+        var player;
+        var i = 0;
+
+        if  (player1.style.visibility == "visible")
+            player = 1;
+        else
+            player = 2;
+        for (i=0; i<3; i++)
+            if (document.getElementById("cell0" + i).innerHTML == document.getElementById("cell1" + i).innerHTML && document.getElementById("cell0" + i).innerHTML == document.getElementById("cell2" + i).innerHTML)
+            {
+                document.getElementById("cell0" + i).parentNode.style.backgroundColor = "green";
+                document.getElementById("cell1" + i).parentNode.style.backgroundColor = "green";
+                document.getElementById("cell2" + i).parentNode.style.backgroundColor = "green";
+                return player;
+            }
+        for (i=0; i<3; i++)
+            if (document.getElementById("cell" + i + "0").innerHTML == document.getElementById("cell" + i + "1").innerHTML && document.getElementById("cell" + i + "0").innerHTML == document.getElementById("cell" + i + "2").innerHTML)
+            {
+                document.getElementById("cell" + i + "0").parentNode.style.backgroundColor = "green";
+                document.getElementById("cell" + i + "1").parentNode.style.backgroundColor = "green";
+                document.getElementById("cell" + i + "2").parentNode.style.backgroundColor = "green";
+                return player;
+            }
+        if (document.getElementById("cell00").innerHTML == document.getElementById("cell11").innerHTML && document.getElementById("cell11").innerHTML == document.getElementById("cell22").innerHTML)
+        {
+            document.getElementById("cell00").parentNode.style.backgroundColor = "green";
+            document.getElementById("cell11").parentNode.style.backgroundColor = "green";
+            document.getElementById("cell22").parentNode.style.backgroundColor = "green";
+            return player;
+        }
+        if (document.getElementById("cell02").innerHTML == document.getElementById("cell11").innerHTML && document.getElementById("cell11").innerHTML == document.getElementById("cell20").innerHTML)
+        {
+            document.getElementById("cell02").parentNode.style.backgroundColor = "green";
+            document.getElementById("cell11").parentNode.style.backgroundColor = "green";
+            document.getElementById("cell20").parentNode.style.backgroundColor = "green";
+            return player;
+        }
+        if (step.value == "9")
+            return 0;
+        return -1;
+    }
+
+    function changeplayer()
+    {
+        player1.style.visibility = (player1.style.visibility == "visible") ? "hidden" : "visible";
+        player2.style.visibility = (player2.style.visibility == "visible") ? "hidden" : "visible";
+    }
+
+    function restore()
+    {
+        var x = 0;
+        var y = 0;
+
+        player1.style.visibility = "visible";
+        player2.style.visibility = "hidden";
+        winner.innerHTML = "";
+        again.style.visibility = "hidden";
+        step.value = "0";
+        for (x=0; x<3; x++)
+            for (y=0; y<3; y++)
+            {
+                document.getElementById("cell" + x + y).innerHTML = '<input type="button" class="button" onclick="tictactoe(' + x + ', ' + y + ');"/>';
+                document.getElementById("cell" + x + y).parentNode.style.backgroundColor = "white";
+            }
+    }
+    </script>
+</head>
+<body onload="restore();">
+    <script src="//tajs.qq.com/stats?sId=54396677" async></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44785715-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <h1>Tic-tac-toe</h1>
+    <table id="turn">
+        <tr>
+            <td><span id="player1">Player 1's turn</span></td>
+            <td><span id="winner"></span></td>
+            <td><span id="player2">Player 2's turn</span></td>
+        </tr>
+    </table>
+    <table id="game">
+        <tr>
+            <td><span id="cell00"></span></td>
+            <td><span id="cell01"></span></td>
+            <td><span id="cell02"></span></td>
+        </tr>
+        <tr>
+            <td><span id="cell10"></span></td>
+            <td><span id="cell11"></span></td>
+            <td><span id="cell12"></span></td>
+        </tr>
+        <tr>
+            <td><span id="cell20"></span></td>
+            <td><span id="cell21"></span></td>
+            <td><span id="cell22"></span></td>
+        </tr>
+    </table>
+    <h4><input type="button" id="again" value="Play again!" onclick="restore();"/></h4>
+    <h3>Scoreboard</h3>
+    <table id="score">
+        <tr>
+            <th>Player</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><span id="score1">0</span></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><span id="score2">0</span></td>
+        </tr>
+    </table>
+    <input type="hidden" id="step"/>
+</body>
+</html>

@@ -17,8 +17,23 @@ class PortfolioController extends HomeController
         $data['pageIdentifier'] = 'project';
 
         $minutes = 60;
-        $table_projects = DB::table('projects');
-        $data['projects'] = [];
+        $table_projects = DB::table('projects') -> join('projects_category', 'projects.category_id', '=', 'projects_category.id');
+        $projects = Cache::remember('projects', $minutes, function() use ($table_projects) {
+            return $table_projects -> select('projects.id', 'projects.default_lang', 'projects.name_en', 'projects.name_zh', 'projects.desc_en', 'projects.desc_zh', 'projects.link', 'projects.source', 'projects.image', 'projects_category.category') -> orderBy('category', 'asc') -> get();
+        });
+        $result = array();
+        foreach ($projects as $project) {
+            $temp['id'] = $project -> id;
+            $temp['category'] = $project -> category;
+            $temp['name'] = $this -> getContentByLocale('name', $project);
+            $temp['desc'] = $this -> getContentByLocale('desc', $project);
+            $temp['link'] = $project -> link;
+            $temp['source'] = $project -> source;
+            $temp['image'] = $project -> image;
+            $result[] = $temp;
+        }
+        $collection = collect($result);
+        $data['projects'] = $collection -> groupBy('category') -> toArray();
 
         if ($this -> isAjax) {
             return $this -> handle('portfolio.project', $data);
