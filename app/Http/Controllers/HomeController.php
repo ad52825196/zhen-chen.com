@@ -10,45 +10,6 @@ use Carbon\Carbon;
 
 class HomeController extends Controller
 {
-    protected $request;
-    protected $url;
-    protected $path;
-    protected $isAjax;
-
-    public function __construct(Request $request) {
-        $this -> request = $request;
-        $this -> url = $request -> url();
-        $this -> path = $request -> path();
-        $this -> isAjax = $request -> ajax() || $request -> pjax();
-
-        // record pageview
-        if (strlen($this -> path) <= 255) {
-            DB::transaction(function() {
-                $table = DB::table('posts');
-                $exists = $table -> where('path', $this -> path) -> exists();
-                if ($exists) {
-                    $table -> where('path', $this -> path) -> increment('pageview');
-                } else {
-                    $table -> insert(['path' => $this -> path, 'pageview' => 1]);
-                }
-            }, 5);
-        }
-    }
-
-    protected function handle($view, $data) {
-        $sections = view($view, $data) -> renderSections();
-
-        return $sections['title'] . $sections['body'];
-    }
-
-    protected function getContentByLocale($name, $row) {
-        $result = $row -> {$name . '_' . App::getLocale()};
-        if ($result === null) {
-            $default_lang = $row -> default_lang;
-            $result = $row -> {$name . '_' . $default_lang};
-        }
-        return $result;
-    }
 
     public function index() {
         $data['keywords'] = 'Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
