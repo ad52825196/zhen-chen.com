@@ -50,6 +50,11 @@ class HomeController extends Controller
         return view('guestbook', $data);
     }
 
+    public function cv() {
+        $pathToFile = public_path() . DIRECTORY_SEPARATOR . 'Zhen Chen - CV.pdf';
+        return response() -> download($pathToFile);
+    }
+
     public function status() {
         $data['keywords'] = 'Status, 状态, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
         $data['title'] = 'Status | ' . env('APP_NAME');

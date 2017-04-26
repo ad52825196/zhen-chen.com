@@ -46,7 +46,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/me">Me</a></li>
-                        <li><a href="#" title="Coming Soon">CV</a></li>
+                        <li><a href="/cv" target="_blank" data-no-pjax>CV</a></li>
                         <li><a href="/status">Status</a></li>
                         <li><a href="/changelog">Changelog</a></li>
                     </ul>
