@@ -94,11 +94,6 @@ img {
     right: 40px;
 }
 
-/* fixed navbar */
-body {
-    padding-top: 50px;
-}
-
 /* navbar colour */
 nav ul li:hover,
 nav ul li:active {
