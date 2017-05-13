@@ -13,6 +13,8 @@ $(document).ready(function() {
         recordHistory: false,
         paddingBottom: ($('footer').outerHeight(true) + 20) + 'px',
         loopBottom: true,
+        normalScrollElements: 'nav.navbar',
+        normalScrollElementTouchThreshold: 10,
     });
 });
 </script>

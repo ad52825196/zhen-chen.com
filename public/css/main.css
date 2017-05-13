@@ -222,8 +222,9 @@ footer .social-icon {
 @media only screen and (max-width: 768px) {
     /* for tablet and small screen */
     .me #avatar {
-        width: 160px;
-        height: 160px;
+        width: 120px;
+        height: 120px;
+        border: 6px solid #aee2d9;
     }
 }
 
