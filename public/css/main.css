@@ -95,8 +95,8 @@ img {
 }
 
 /* navbar colour */
-nav ul li:hover,
-nav ul li:active {
+nav .nav > li:hover,
+nav .nav > li:active {
     background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 300ms;
 }
@@ -136,7 +136,7 @@ footer .social-icon {
     margin-bottom: 0px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     /* for tablet and small screen */
     footer {
         padding: 10px 20px;
