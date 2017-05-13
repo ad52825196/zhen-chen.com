@@ -38,13 +38,18 @@ $(function() {
 $(document).pjax('a:not([data-no-pjax])', '#body');
 $(document).on('pjax:start', function() { NProgress.start(); });
 $(document).on('pjax:end',   function() { NProgress.done();  });
+$(document).on('pjax:end', linkTarget);
+$(document).on('pjax:end', function() { ga('send', 'pageview'); });
 $(function() {
     if ($(window).width() < 768) {
         $(document).on('pjax:end', function() { $('.collapse').collapse('hide'); });
     }
 });
-$(document).on('pjax:end', linkTarget);
-$(document).on('pjax:end', function() { ga('send', 'pageview'); });
+$(document).on('pjax:beforeReplace', function() {
+    if ($('html').hasClass('fp-enabled')) {
+        $.fn.fullpage.destroy('all');
+    }
+});
 $(document).on('pjax:timeout', function(event) {
     // Prevent default timeout redirection behavior
     event.preventDefault();

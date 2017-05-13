@@ -50,6 +50,31 @@ class HomeController extends Controller
         return view('guestbook', $data);
     }
 
+    public function me() {
+        $data['keywords'] = 'Me, CV, 简历, Zhen Chen, 陈桢, 飞越彩虹, Rainbow Studio, 彩虹工作室';
+        $data['title'] = 'Me | ' . env('APP_NAME');
+        $data['canonical'] = env('APP_URL') . '/me';
+        $data['pageIdentifier'] = 'me';
+
+        // avatar
+        $email = "chenzhen42@qq.com";
+        $email = md5(strtolower(trim($email)));
+        $size = 200;
+        $data['avatar'] = "//www.gravatar.com/avatar/$email?s=$size";
+
+        // cache page views
+        $minutes = 1;
+        $table_posts = DB::table('posts');
+        $data['pageview'] = Cache::remember("pageview.{$this -> path}", $minutes, function() use ($table_posts) {
+            return $table_posts -> where('path', $this -> path) -> value('pageview');
+        });
+
+        if ($this -> isAjax) {
+            return $this -> handle('me', $data);
+        }
+        return view('me', $data);
+    }
+
     public function cv() {
         $pathToFile = public_path() . DIRECTORY_SEPARATOR . 'Zhen Chen - CV.pdf';
         return response() -> download($pathToFile);
