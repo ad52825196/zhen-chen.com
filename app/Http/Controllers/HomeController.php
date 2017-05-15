@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Exception;
 
 class HomeController extends Controller
 {
@@ -77,7 +78,11 @@ class HomeController extends Controller
 
     public function cv() {
         $pathToFile = public_path() . DIRECTORY_SEPARATOR . 'Zhen Chen - CV.pdf';
-        return response() -> download($pathToFile);
+        try {
+            return response() -> download($pathToFile);
+        } catch (Exception $e) {
+            abort(404);
+        }
     }
 
     public function status() {
