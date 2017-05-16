@@ -77,7 +77,8 @@ class HomeController extends Controller
     }
 
     public function cv() {
-        $pathToFile = public_path() . DIRECTORY_SEPARATOR . 'Zhen Chen - CV.pdf';
+        $filename = 'Zhen Chen - CV.pdf';
+        $pathToFile = public_path() . DIRECTORY_SEPARATOR . $filename;
         try {
             return response() -> download($pathToFile);
         } catch (Exception $e) {
