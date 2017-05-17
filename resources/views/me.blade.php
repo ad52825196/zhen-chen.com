@@ -96,12 +96,18 @@ $(document).ready(function() {
             <a href="https://www.myequals.net/#/sharelink/f1de7a8f-13f2-4b9d-b798-af6c6573d7bf/d48f3cd2-79ef-4b89-9a90-c2f2b513d271">{{ __('me.transcript') }}</a>
         </p>
         <h1 class="text-capitalize">{{ __('me.achievement') }}</h1>
-        <ul class="list-unstyled">
-            <li>Senior Scholar Award in the Faculty of Science</li>
-            <li>Best BSc in Information System Award</li>
-            <li>First in Course Award in 9 courses (more than 1/3 of all courses I have taken): <br>
-            COMPSCI 105, COMPSCI 225, COMPSCI 230, COMPSCI 335, COMPSCI 373, INFOSYS 280, MATHS 108, MATHS 208, ECON 151G</li>
-        </ul>
+        <div class="row">
+            <div class="col-sm-2 col-md-3"></div>
+            <div class="col-sm-8 col-md-6">
+            <ul class="text-left">
+                <li>Senior Scholar Award in the Faculty of Science</li>
+                <li>Best BSc in Information System Award</li>
+                <li>First in Course Award in 9 courses (more than 1/3 of all courses I have taken): <br>
+                COMPSCI 105, COMPSCI 225, COMPSCI 230, COMPSCI 335, COMPSCI 373, INFOSYS 280, MATHS 108, MATHS 208, ECON 151G</li>
+            </ul>
+            </div>
+            <div class="col-sm-2 col-md-3"></div>
+        </div>
     </div>
 
     <div class="section">
