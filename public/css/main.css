@@ -186,7 +186,8 @@ footer .social-icon {
 .me h3,
 .me h4,
 .me h5,
-.me h6 {
+.me h6,
+.me li {
     color: #f0f2f5;
 }
 
@@ -209,6 +210,10 @@ footer .social-icon {
 .me h2 {
     font-weight: 600;
     font-size: 2em;
+}
+
+.me h4 {
+    margin: 0 0 0.2em 0;
 }
 
 .me p {
@@ -245,7 +250,7 @@ footer .social-icon {
 .me .nav-pills > li.active > a,
 .me .nav-pills > li.active > a:hover,
 .me .nav-pills > li.active > a:active,
-.me .nav-pills > li.active > a:hover {
+.me .nav-pills > li.active > a:focus {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -322,7 +327,7 @@ footer .social-icon {
     }
 
     .me h4 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
