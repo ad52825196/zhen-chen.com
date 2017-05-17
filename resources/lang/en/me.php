@@ -32,7 +32,7 @@ return [
 
     'experience' => 'experience',
     'experience_desc' => '<h4>Teaching Assistant - Undergraduate Lab Demonstrator</h4>
-        <p>February 2016 - June 2017</p>
+        <p>March 2016 - November 2016, January 2017 - June 2017</p>
         <h4>Teaching Assistant - OpenGL Assignment Question Designer for COMPSCI 373</h4>
         <p>March 2017 - June 2017</p>
         <h4>Co-founder and President of Dream@Fly Flight Simulation Club in Shanghai</h4>
