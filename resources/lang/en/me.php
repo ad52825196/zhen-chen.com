@@ -7,7 +7,6 @@ return [
     'name' => 'Zhen Chen',
     'desc' => 'A Devoted, Passionate, and Persistent',
     'occupation' => 'software developer & full stack web developer',
-    'pageview' => 'views',
 
     'project' => 'projects',
     'demo' => 'Demo',
@@ -23,12 +22,23 @@ return [
 
     'education' => 'education',
     'bachelor' => 'In May 2017, I graduated as a Bachelor of Science (Senior Scholar) from the <a href="https://www.auckland.ac.nz/">University of Auckland</a>',
-    'bachelor_major' => 'Major in <em>Computer Science</em> and <em>Information System</em>.',
-    'bachelor_grade' => '21 A+ achieved in total and 100% A+ in <em>Computer Science</em> courses',
+    'bachelor_major' => 'Major in <em>Computer Science</em> and <em>Information Systems</em>',
+    'bachelor_grade' => '6 Stage III <em>Computer Science</em> courses taken, 21 A+ achieved in total and 100% A+ in <em>Computer Science</em> courses',
+    'sjtu' => 'I was studying IEEE at <a href="http://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a> from September 2012 to September 2013',
     'transcript' => 'Official Transcript',
     'achievement' => 'achievements & awards',
 
     'skill' => 'skills',
+    'skill_tool' => 'Tools & Technologies',
+    'skill_language' => 'Languages',
+    'skill_miscellaneous' => 'Miscellaneous',
+    'skill_tool_footnote1' => 'I have been using and maintaining my own virtual private server since August 2015.',
+    'self_learning' => 'Self-Learning',
+    'trouble_shooting' => 'Trouble Shooting',
+    'teamwork' => 'Teamwork',
+    'testing' => 'Testing',
+    'translation' => 'Translation',
+    'video_editing' => 'Video Editing',
 
     'experience' => 'experience',
     'experience_desc' => '<h4>Teaching Assistant - Undergraduate Lab Demonstrator</h4>
@@ -43,7 +53,7 @@ return [
         <h4>Mid-term Test Invigilator for COMPSCI 230</h4>
         <p>May 2017</p>',
 
-    'current' => 'current position',
+    'current' => 'current status',
     'current_desc' => 'I am looking for jobs in New Zealand in any of the following fields:',
     'current_item' => '<li>Software Development</li><li>Web Development</li><li>Game Development</li><li>Other related areas are also welcome :)</li>',
 
@@ -51,4 +61,6 @@ return [
     'website' => 'personal website',
     'studio' => 'rainbow studio',
     'cv' => 'Download CV',
+    'thanks' => 'Thanks for reading',
+    'pageview' => 'views',
 ];

@@ -164,6 +164,14 @@ footer .social-icon {
     padding-right: 80px;
 }
 
+.fp-controlArrow {
+    margin-top: -88px;
+}
+
+.fp-prev {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     /* for tablet and small screen */
     #fp-nav {
@@ -171,8 +179,26 @@ footer .social-icon {
     }
 
     #fullpage .section {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 2px;
+        border-width: 14px 0 14px 12px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 2px;
+        border-width: 14px 12px 14px 0;
+    }
+
+    .fp-controlArrow {
+        margin-top: -44px;
+    }
+
+    .fp-prev {
+        display: block;
     }
 }
 
@@ -191,8 +217,8 @@ footer .social-icon {
     color: #f0f2f5;
 }
 
-.me #pageview {
-    color: #333333;
+.me .end {
+    color: #222222;
     font-size: 0.8em;
 }
 
@@ -213,15 +239,15 @@ footer .social-icon {
 }
 
 .me h4 {
-    margin: 0 0 0.2em 0;
+    margin: 0.6em 0 0.2em 0;
 }
 
 .me p {
-    margin: 0.5em 0;
+    margin: 0 0 0.2em 0;
 }
 
 .me #desc {
-    margin: 1em 0 0.25em 0;
+    margin: 1em 0 -0.4em 0;
 }
 
 .me #avatar {
@@ -256,6 +282,50 @@ footer .social-icon {
 
 .me #lang {
     display: inline-block;
+}
+
+.me ol,
+.me ul {
+    padding-left: 15px;
+}
+
+.me ol.list-unstyled,
+.me ul.list-unstyled {
+    padding-left: 0px;
+}
+
+.me table.skill-panel {
+    margin: 10px auto;
+}
+
+.me table.skill-panel td {
+    padding: 4px 0;
+    vertical-align: middle;
+}
+
+.me table.skill-panel td:first-child {
+    padding-right: 8px;
+}
+
+.me .tag {
+    display: inline-block;
+    background-color: #0d4073;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin: 1px 0;
+    opacity: 0.6;
+}
+
+.me .familiar .tag {
+    opacity: 0.8;
+}
+
+.me .good .tag {
+    opacity: 1;
+}
+
+.me .love {
+    color: #c20a0a;
 }
 
 .me a,
@@ -301,10 +371,12 @@ footer .social-icon {
 
     .me h1 {
         font-size: 2.5em;
+        margin: 0.6em 0 0.3em 0;
     }
 
     .me h2 {
         font-size: 1.8em;
+        margin: 0.6em 0 0.3em 0;
     }
 
     .me h4 {
@@ -320,10 +392,12 @@ footer .social-icon {
 
     .me h1 {
         font-size: 2em;
+        margin: 0.4em 0 0.2em 0;
     }
 
     .me h2 {
         font-size: 1.3em;
+        margin: 0.4em 0 0.2em 0;
     }
 
     .me h4 {

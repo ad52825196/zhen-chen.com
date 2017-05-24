@@ -6,7 +6,6 @@ return [
     'name' => '陈桢',
     'desc' => '投入·激情·执着',
     'occupation' => '软件开发者 & 全栈 Web 开发者',
-    'pageview' => '次浏览',
 
     'project' => '项目经验',
     'demo' => '演示',
@@ -23,11 +22,22 @@ return [
     'education' => '教育背景',
     'bachelor' => '2017年5月，我在 <a href="https://www.auckland.ac.nz/">奥克兰大学</a> 获得理学士学位（高级学者）',
     'bachelor_major' => '<em>计算机科学</em> 和 <em>信息系统</em> 专业',
-    'bachelor_grade' => '共获得21个A+，并且在 <em>计算机科学</em> 课程中100%获得A+',
+    'bachelor_grade' => '学习了6门 <em>计算机科学</em> 专业下的 III级 课程，共获得21个A+，并且在 <em>计算机科学</em> 课程中100%获得A+',
+    'sjtu' => '2012年9月到2013年9月期间，我在 <a href="http://www.sjtu.edu.cn/">上海交通大学</a> 学习 IEEE 专业',
     'transcript' => '成绩单',
     'achievement' => '成就 & 奖项',
 
     'skill' => '擅长技能',
+    'skill_tool' => '工具 & 技术',
+    'skill_language' => '语言',
+    'skill_miscellaneous' => '其他',
+    'skill_tool_footnote1' => '自2015年8月起，我就在使用和维护自己的VPS服务器。',
+    'self_learning' => '自学能力',
+    'trouble_shooting' => '问题定位和解决',
+    'teamwork' => '团队协作',
+    'testing' => '测试',
+    'translation' => '翻译',
+    'video_editing' => '视频编辑',
 
     'experience' => '工作经历',
     'experience_desc' => '<h4>本科生计算机实验室助教</h4>
@@ -50,4 +60,6 @@ return [
     'website' => '个人网站',
     'studio' => '彩虹工作室',
     'cv' => '下载简历',
+    'thanks' => '感谢您的浏览',
+    'pageview' => '次浏览',
 ];

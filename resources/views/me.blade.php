@@ -8,7 +8,7 @@ $(document).ready(function() {
         anchors: [{!! __('me.anchors') !!}],
         navigationTooltips: [{!! __('me.navigationTooltips') !!}],
         navigation: true,
-        navigationPosition: 'right',
+        navigationPosition: 'left',
         lazyLoading: false,
         recordHistory: false,
         paddingBottom: ($('footer').outerHeight(true) + 40) + 'px',
@@ -46,7 +46,6 @@ $(document).ready(function() {
             @endif
             >中</a></li>
         </ul>
-        <p id="pageview" class="text-capitalize">{{ $pageview or '0' }} {{ __('me.pageview') }}</p>
     </div>
 
     <div class="section text-center">
@@ -89,19 +88,21 @@ $(document).ready(function() {
     <div class="section text-center">
         <h1 class="text-capitalize">{{ __('me.education') }}</h1>
         <h4>{!! __('me.bachelor') !!}</h4>
-        <p>{!! __('me.bachelor_major') !!} GPA: 8.8/9.0</p>
+        <p>{!! __('me.bachelor_major') !!}</p>
         <p>
             {!! __('me.bachelor_grade') !!}
             <span class="fa fa-check" aria-hidden="true"></span>
-            <a href="https://www.myequals.net/#/sharelink/f1de7a8f-13f2-4b9d-b798-af6c6573d7bf/d48f3cd2-79ef-4b89-9a90-c2f2b513d271">{{ __('me.transcript') }}</a>
+            GPA: 8.8/9.0
+            <a href="https://www.myequals.net/#/sharelink/07c932a6-2634-407e-a19e-4f35bb31028c/4a8288a2-1cea-43e3-b8cf-2c65c76791b1">{{ __('me.transcript') }}</a>
         </p>
+        <h4>{!! __('me.sjtu') !!}</h4>
         <h1 class="text-capitalize">{{ __('me.achievement') }}</h1>
         <div class="row">
             <div class="col-sm-2 col-md-3"></div>
             <div class="col-sm-8 col-md-6">
             <ul class="text-left">
                 <li>Senior Scholar Award in the Faculty of Science</li>
-                <li>Best BSc in Information System Award</li>
+                <li>Top Bachelor of Science in Information Systems Award</li>
                 <li>First in Course Award in 9 courses (more than 1/3 of all courses I have taken): <br>
                 COMPSCI 105, COMPSCI 225, COMPSCI 230, COMPSCI 335, COMPSCI 373, INFOSYS 280, MATHS 108, MATHS 208, ECON 151G</li>
             </ul>
@@ -111,7 +112,159 @@ $(document).ready(function() {
     </div>
 
     <div class="section">
-        <h1 class="text-capitalize">{{ __('me.skill') }}</h1>
+        <div class="slide">
+            <h1 class="text-capitalize">{{ __('me.skill') }}</h1>
+            <h2 class="text-center">{{ __('me.skill_tool') }}</h2>
+            <table class="skill-panel">
+            <tr class="good">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">Laravel</span>
+                <span class="tag">Linux Server <sup>[1]</sup></span>
+                </td>
+            </tr>
+            <tr class="good">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">Bootstrap</span>
+                <span class="tag">jQuery</span>
+                <span class="tag">Nginx</span>
+                <span class="tag">Pjax</span>
+                </td>
+            </tr>
+            <tr class="good">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">ERD</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">RESTful</span>
+                </td>
+            </tr>
+            <tr class="familiar">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">JAX-RS</span>
+                <span class="tag">OpenGL</span>
+                </td>
+            </tr>
+            <tr class="familiar">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">Unity</span>
+                <span class="tag">Photoshop</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right">
+                <span class="fa fa-star-half"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">Azure</span>
+                <span class="tag">Maven</span>
+                </td>
+            </tr>
+            </table>
+            <ol class="text-center">
+                <li>{{ __('me.skill_tool_footnote1') }} <a href="/changelog" target="_blank" data-no-pjax>#</a></li>
+            </ol>
+        </div>
+        <div class="slide">
+            <h2 class="text-center">{{ __('me.skill_language') }}</h2>
+            <table class="skill-panel">
+            <tr class="good">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">Java</span>
+                <span class="tag">Python</span>
+                </td>
+            </tr>
+            <tr class="good">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">PHP</span>
+                <span class="tag">SQL</span>
+                <span class="tag">CSS</span>
+                </td>
+            </tr>
+            <tr class="familiar">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">Javascript</span>
+                <span class="tag">C#</span>
+                <span class="tag">C/C++</span>
+                <span class="tag">HTML</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">Prolog</span>
+                </td>
+            </tr>
+            </table>
+        </div>
+        <div class="slide">
+            <h2 class="text-center">{{ __('me.skill_miscellaneous') }}</h2>
+            <table class="skill-panel">
+            <tr class="good">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">{{ __('me.self_learning') }}</span>
+                </td>
+            </tr>
+            <tr class="familiar">
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">{{ __('me.trouble_shooting') }}</span>
+                <span class="tag">{{ __('me.teamwork') }}</span>
+                <span class="tag">{{ __('me.testing') }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right">
+                <span class="fa fa-star"></span>
+                </td>
+                <td class="text-left">
+                <span class="tag">{{ __('me.translation') }}</span>
+                <span class="tag">{{ __('me.video_editing') }}</span>
+                </td>
+            </tr>
+            </table>
+        </div>
     </div>
 
     <div class="section text-center">
@@ -135,11 +288,15 @@ $(document).ready(function() {
         <h4 class="text-capitalize">
             <a href="/" target="_blank" data-no-pjax>{{ __('me.website') }}</a>
             |
-            <a href="https://zhen-chen.xyz/" target="_blank" data-no-pjax>{{ __('me.studio') }}</a>
+            <a href="https://zhen-chen.xyz/">{{ __('me.studio') }}</a>
         </h4>
         <h2><a class="highlight" href="/cv" target="_blank" data-no-pjax>{{ __('me.cv') }}</a></h2>
         <div class="social-panel">
             <a href="https://github.com/ad52825196"><span class="fa fa-github fa-2x"></span></a>
+        </div>
+        <div class="end">
+            <p>{{ __('me.thanks') }} <span class="fa fa-heart love"></span></p>
+            <p class="text-capitalize">{{ $pageview or '0' }} {{ __('me.pageview') }}</p>
         </div>
     </div>
 </div>
