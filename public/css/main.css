@@ -109,6 +109,12 @@ nav .nav > li:active {
     }
 }
 
+/* ads panel */
+.ads-panel-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* sticky footer */
 html {
     position: relative;

@@ -37,7 +37,7 @@
 </div>
 
 <!-- Ad -->
-<div class="container">
+<div class="container ads-panel-bottom">
 <div class="row">
     <div class="col-md-6">
         @include('ads.main1')
