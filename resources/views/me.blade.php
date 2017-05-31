@@ -214,7 +214,7 @@ $(document).ready(function() {
                 <span class="fa fa-star-half"></span>
                 </td>
                 <td class="text-left">
-                <span class="tag">Javascript</span>
+                <span class="tag">JavaScript</span>
                 <span class="tag">C#</span>
                 <span class="tag">C/C++</span>
                 <span class="tag">HTML</span>
