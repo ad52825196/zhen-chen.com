@@ -94,17 +94,18 @@ class PortfolioController extends HomeController
         $minutes = 60;
         $perPage = 5;
         $page = $this -> request -> input('page', 1);
-        $table_translations = DB::table('translations') -> join('translations_role', 'translations.role_id', '=', 'translations_role.id');
+        $table_translations = DB::table('translations') -> join('translations_role', 'translations.role_id', '=', 'translations_role.id') -> join('translations_group', 'translations.group_id', '=', 'translations_group.id');
         $translations = Cache::remember("translations.$page", $minutes, function() use ($table_translations, $perPage) {
-            return $table_translations -> select('translations.id as id', 'translations.default_lang', 'translations.game_en', 'translations.game_zh', 'translations.nickname', 'translations.link', 'translations.image', 'translations_role.role_en', 'translations_role.role_zh') -> orderBy('id', 'desc') -> paginate($perPage);
+            return $table_translations -> select('translations.id as id', 'translations.default_lang', 'translations.game_en', 'translations.game_zh', 'translations.nickname', 'translations.link', 'translations.image', 'translations_role.role_en', 'translations_role.role_zh', 'translations_group.group_name') -> orderBy('id', 'desc') -> paginate($perPage);
         });
         $result = array();
         foreach ($translations as $translation) {
             $temp['id'] = $translation -> id;
             $temp['game_en'] = $translation -> game_en;
             $temp['game_zh'] = $translation -> game_zh;
-            $temp['role'] = $this -> getContentByLocale('role', $translation);
+            $temp['group_name'] = $translation -> group_name;
             $temp['nickname'] = $translation -> nickname;
+            $temp['role'] = $this -> getContentByLocale('role', $translation);
             $temp['link'] = $translation -> link;
             $temp['image'] = $translation -> image;
             $result[] = $temp;

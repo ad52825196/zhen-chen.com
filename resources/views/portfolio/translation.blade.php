@@ -27,7 +27,7 @@
         <a href="{{ $translation['link'] }}">#</a>
         @endif
         </h1>
-        <h2><span class="text-capitalize">{{ $translation['role'] }}</span> - {{ $translation['nickname'] }}</h2>
+        <h2><span class="text-capitalize">{{ $translation['role'] }}</span> - {{ $translation['nickname'] }} - {{ $translation['group_name'] }}</h2>
         @if ($translation['image'] !== null)
         <p><a href="/images/translation/{{ $translation['image'] }}" target="_blank" data-no-pjax><img src="/images/translation/{{ $translation['image'] }}" width="400" /></a></p>
         @endif
