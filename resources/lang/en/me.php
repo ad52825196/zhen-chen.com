@@ -10,9 +10,9 @@ return [
 
     'project' => 'projects',
     'demo' => 'Demo',
-    'youget_desc' => 'A wrapper for <a href="https://github.com/soimort/you-get">You-Get</a> to make it more convenient to use.',
-    'chinese_desc' => 'A tool to turn Chinese paragraphs into sentences and meaningful words correctly.',
-    'broker_desc' => 'A simple online system for brokers to generate item orders and make trades.',
+    'youget_desc' => '﻿A wrapper for the popular web resource scraper <a href="https://github.com/soimort/you-get">You-Get</a> to make it more user-friendly and have more useful features.',
+    'chinese_desc' => '﻿A tool to turn Chinese paragraphs into sentences and meaningful words with the ability to resolve some ambiguity.',
+    'broker_desc' => '﻿A simple online system for brokers to submit bid and ask orders and administrators to do some data analysis.',
     'process_desc' => 'A simple message passing system for multiple processes to communicate with each other in a safe manner.',
     'project_more' => 'More on my Project page',
 
@@ -33,6 +33,7 @@ return [
     'skill_language' => 'Languages',
     'skill_miscellaneous' => 'Miscellaneous',
     'skill_tool_footnote1' => 'I have been using and maintaining my own virtual private server since August 2015.',
+    'skill_tool_footnote2' => 'Nginx with PageSpeed Module',
     'self_learning' => 'Self-Learning',
     'trouble_shooting' => 'Trouble Shooting',
     'teamwork' => 'Teamwork',
@@ -42,7 +43,7 @@ return [
 
     'experience' => 'experience',
     'experience_desc' => '<h4>Teaching Assistant - Undergraduate Lab Demonstrator</h4>
-        <p>March 2016 - November 2016, January 2017 - June 2017</p>
+        <p>March 2016 - November 2016, January 2017 - Now</p>
         <h4>Teaching Assistant - OpenGL Assignment Question Designer for COMPSCI 373</h4>
         <p>March 2017 - June 2017</p>
         <h4>Co-founder and President of Dream@Fly Flight Simulation Club in Shanghai</h4>

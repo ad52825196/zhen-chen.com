@@ -124,7 +124,7 @@ $(document).ready(function() {
                 </td>
                 <td class="text-left">
                 <span class="tag">Laravel</span>
-                <span class="tag">Linux Server <sup>[1]</sup></span>
+                <span class="tag">Linux Server<sup>[1]</sup></span>
                 </td>
             </tr>
             <tr class="good">
@@ -135,7 +135,7 @@ $(document).ready(function() {
                 <td class="text-left">
                 <span class="tag">Bootstrap</span>
                 <span class="tag">jQuery</span>
-                <span class="tag">Nginx</span>
+                <span class="tag">Nginx<sup>[2]</sup></span>
                 <span class="tag">Pjax</span>
                 </td>
             </tr>
@@ -181,6 +181,7 @@ $(document).ready(function() {
             </table>
             <ol class="text-center">
                 <li>{{ __('me.skill_tool_footnote1') }} <a href="/changelog" target="_blank" data-no-pjax>#</a></li>
+                <li>{{ __('me.skill_tool_footnote2') }}</li>
             </ol>
         </div>
         <div class="slide">
@@ -204,6 +205,7 @@ $(document).ready(function() {
                 </td>
                 <td class="text-left">
                 <span class="tag">PHP</span>
+                <span class="tag">HTML</span>
                 <span class="tag">SQL</span>
                 <span class="tag">CSS</span>
                 </td>
@@ -217,7 +219,6 @@ $(document).ready(function() {
                 <span class="tag">JavaScript</span>
                 <span class="tag">C#</span>
                 <span class="tag">C/C++</span>
-                <span class="tag">HTML</span>
                 </td>
             </tr>
             <tr>

@@ -32,6 +32,7 @@ return [
     'skill_language' => '语言',
     'skill_miscellaneous' => '其他',
     'skill_tool_footnote1' => '自2015年8月起，我就在使用和维护自己的VPS服务器。',
+    'skill_tool_footnote2' => '附带 PageSpeed Module 的 Nginx',
     'self_learning' => '自学能力',
     'trouble_shooting' => '问题定位和解决',
     'teamwork' => '团队协作',
@@ -41,8 +42,8 @@ return [
 
     'experience' => '工作经历',
     'experience_desc' => '<h4>本科生计算机实验室助教</h4>
-        <p>2016年3月 - 2016年11月，2017年1月 - 2017年6月</p>
-        <h4>COMPSCI 373 OpenGL 作业 问题设计师</h4>
+        <p>2016年3月 - 2016年11月，2017年1月 - 至今</p>
+        <h4>COMPSCI 373 OpenGL 作业问题设计师</h4>
         <p>2017年3月 - 2017年6月</p>
         <h4>上海复旦附中 Dream@Fly 模拟飞行社团 联合创始人 社长</h4>
         <p>2010年2月 - 2011年6月</p>',
