@@ -291,7 +291,7 @@ $(document).ready(function() {
             |
             <a href="https://zhen-chen.xyz/">{{ __('me.studio') }}</a>
         </h4>
-        <h2><a class="highlight" href="/cv" target="_blank" data-no-pjax>{{ __('me.cv') }}</a></h2>
+        <h2><a class="highlight" href="/cv" data-no-pjax>{{ __('me.cv') }}</a></h2>
         <div class="social-panel">
             <a href="https://github.com/ad52825196"><span class="fa fa-github fa-2x"></span></a>
         </div>
