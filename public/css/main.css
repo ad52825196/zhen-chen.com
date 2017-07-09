@@ -300,6 +300,11 @@ footer .social-icon {
     padding-left: 0px;
 }
 
+.me ol,
+.me ul {
+    list-style-position: inside;
+}
+
 .me table.skill-panel {
     margin: 10px auto;
 }
