@@ -233,10 +233,16 @@ footer .social-icon {
 }
 
 .me h1 {
-    text-shadow: 1px 1px #146bb8, 2px 3px #90d5c9;
     text-align: center;
     font-weight: 800;
     font-size: 3.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    .me h1 {
+        text-shadow: 1px 1px #146bb8, 2px 3px #90d5c9;
+    }
 }
 
 .me h2 {
@@ -452,8 +458,14 @@ footer .social-icon {
 /* changelog */
 .changelog h1 {
     color: #1986e6;
-    text-shadow: 1px 1px #efefef, 2px 3px #b3cee6;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    .changelog h1 {
+        text-shadow: 1px 1px #efefef, 2px 3px #b3cee6;
+    }
 }
 
 .changelog h3 {
@@ -464,6 +476,12 @@ footer .social-icon {
 /* project */
 .project h1 {
     color: #1986e6;
-    text-shadow: 1px 1px #efefef, 2px 3px #b3cee6;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    .project h1 {
+        text-shadow: 1px 1px #efefef, 2px 3px #b3cee6;
+    }
 }
