@@ -2,7 +2,7 @@
 
 @section('body')
 <div class="jumbotron">
-    <div class="container">
+    <div class="container text-justify">
         <h1>{{ __('translation.title') }}</h1>
         <p>{{ __('translation.desc') }}</p>
     </div>

@@ -2,7 +2,7 @@
 
 @section('body')
 <div class="jumbotron">
-    <div class="container">
+    <div class="container text-justify">
         <h1>{{ __('project.title') }}</h1>
         <p>{{ __('project.desc') }}</p>
         <p><a class="btn btn-primary btn-lg" href="https://github.com/ad52825196">GitHub</a></p>

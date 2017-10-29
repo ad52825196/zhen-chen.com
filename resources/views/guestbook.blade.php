@@ -2,7 +2,7 @@
 
 @section('body')
 <div class="jumbotron">
-    <div class="container">
+    <div class="container text-justify">
         <h1>{{ __('guestbook.title') }}</h1>
         <p>{{ __('guestbook.desc') }}</p>
         <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#donate-modal">{{ __('guestbook.donate') }}</button></p>
