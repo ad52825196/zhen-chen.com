@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'navigationTooltips' => '"封面", "项目", "翻译", "教育", "技能", "经历", "现况", "联系"',
+    'navigationTooltips' => '"封面", "项目", "翻译", "教育", "技能", "经历", "供职", "联系"',
 
     'name' => '陈桢',
     'desc' => '投入·激情·执着',
@@ -41,21 +41,19 @@ return [
     'video_editing' => '视频编辑',
 
     'experience' => '工作经历',
-    'experience_desc' => '<h4>本科生计算机实验室助教</h4>
-        <p>2016年3月 - 2016年11月，2017年1月 - 至今</p>
-        <h4>COMPSCI 373 OpenGL 作业问题设计师</h4>
-        <p>2017年3月 - 2017年6月</p>
+    'experience_desc' => '<h4>产品开发工程师 @Telogis</h4>
+        <p>2017年11月 - 至今</p>
+        <h4>助教 @奥克兰大学</h4>
+        <p>2016年3月 - 2017年11月</p>
         <h4>上海复旦附中 Dream@Fly 模拟飞行社团 联合创始人 社长</h4>
         <p>2010年2月 - 2011年6月</p>',
     'volunteer' => '志愿者',
-    'volunteer_desc' => '<h4>奥克兰大学 UniGuide</h4>
-        <p>2015年2月 - 2015年6月</p>
-        <h4>COMPSCI 230 期中考试监考员</h4>
-        <p>2017年5月</p>',
+    'volunteer_desc' => '<h4>UniGuide @奥克兰大学</h4>
+        <p>2015年2月 - 2015年6月</p>',
 
     'current' => '目前供职',
-    'current_desc' => '我正在寻找位于新西兰境内的以下任意领域的工作：',
-    'current_item' => '<li>软件开发</li><li>网站开发</li><li>游戏开发</li><li>也欢迎其他相关领域的工作 :)</li>',
+    'current_title' => '产品开发工程师 @Telogis',
+    'current_info' => '新西兰·基督城；自2017年11月',
 
     'contact' => '与我联系',
     'website' => '个人网站',

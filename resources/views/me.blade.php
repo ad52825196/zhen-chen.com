@@ -277,10 +277,8 @@ $(document).ready(function() {
 
     <div class="section text-center">
         <h1 class="text-capitalize">{{ __('me.current') }}</h1>
-        <p>{!! __('me.current_desc') !!}</p>
-        <ul class="list-unstyled">
-            {!! __('me.current_item') !!}
-        </ul>
+        <h2>{!! __('me.current_title') !!}</h2>
+        <p>{!! __('me.current_info') !!}</p>
     </div>
 
     <div class="section text-center">

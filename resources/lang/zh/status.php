@@ -9,7 +9,7 @@ return [
     'days' => '天',
     'alive' => '桢现在<span>活着</span>。<small>我思故我在。</small>',
     'dead' => '桢已经<span>死了</span>。',
-    'doing' => '桢正在<span>找工作</span>。',
+    'doing' => '桢正在<span>开始新生活</span>。',
     'wish' => '桢有<a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish" data-no-pjax><span>1</span></a>个人生愿望。
     <div class="collapse" id="wish">
         <div class="well">
@@ -49,5 +49,5 @@ return [
     'expectancy_2' => '来体验生活。',
     'end' => '当桢死了，他就不能去爱，去玩，去写代码，去做美梦，或者去实现他的人生目标了。',
     'waste' => '你已经浪费了生命中的<span id="wastetime"></span>来阅读这个无聊的页面。',
-    'update' => '最后更新于<strong>2017年3月24日</strong>',
+    'update' => '最后更新于<strong>2017年10月28日</strong>',
 ];

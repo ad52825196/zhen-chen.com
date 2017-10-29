@@ -9,7 +9,7 @@ return [
     'days' => 'days',
     'alive' => 'Zhen is <span>alive</span>. <small>Cogito, ergo sum.</small>',
     'dead' => 'Zhen is <span>dead</span>.',
-    'doing' => 'Zhen is <span>looking for jobs</span>.',
+    'doing' => 'Zhen is <span>starting his new life</span>.',
     'wish' => 'Zhen has <a href="#wish" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="wish" data-no-pjax><span>1</span></a> wish for his life.
     <div class="collapse" id="wish">
         <div class="well">
@@ -49,5 +49,5 @@ return [
     'expectancy_2' => 'left to live his life.',
     'end' => 'When Zhen is dead, he will no longer be able to love, to code, to play, to dream a dream, or to pursue his life goals.',
     'waste' => 'You have wasted <span id="wastetime"></span> of your life looking at this boring page.',
-    'update' => 'Last updated on <strong>24 March 2017</strong>',
+    'update' => 'Last updated on <strong>28 October 2017</strong>',
 ];
