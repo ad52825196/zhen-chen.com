@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://zhen-chen.com/</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/project</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/video</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/translation</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/gallery/people</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/guestbook</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/me</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/cv</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/status</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/changelog</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/project?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/project?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/projects/tic-tac-toe.html</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/projects/chinese%20word%20segmentation.pdf</loc>
+  <lastmod>2017-04-25T00:31:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/video?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/video?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/video?page=2</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/video?page=3</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/translation?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/translation?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/gallery/people?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/gallery/people?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/guestbook?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/guestbook?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/me?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/me?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/status?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/status?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/changelog?lang=en</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/changelog?lang=zh</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhen-chen.com/portfolio/video?page=1</loc>
+  <lastmod>2018-09-30T02:59:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
